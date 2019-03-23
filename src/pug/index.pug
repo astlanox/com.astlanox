@@ -1,0 +1,16 @@
+-var title = home.title
+-var description = home.description
+doctype html
+html(lang=home.locale)
+    include module/_head
+    body
+        include module/_header
+        main.Main.Home
+            .Main__header
+                .Home__title
+                    h1 Home
+            .Main__content
+                .Main__contentInner
+                    
+        include module/_footer
+        include module/_script

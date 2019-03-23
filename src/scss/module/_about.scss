@@ -1,0 +1,471 @@
+.About
+{
+    @extend .Page;
+
+    &__header
+    {
+        @extend .Page__header;
+
+        &Title
+        {
+            @extend .Page__headerTitle;
+        }
+    }
+
+    &__main
+    {
+        @extend .Page__main;
+
+        &Inner
+        {
+            @include make-container;
+        }
+    }
+}
+
+.Hi
+{
+    @extend .Page__block;
+    @include make-row;
+
+    &__content
+    {
+        order: 2;
+
+        @include make-col(12);
+        @include media-breakpoint-up(md)
+        {
+            align-self: center;
+            order: 1;
+
+            @include make-col(6);
+        }
+
+        &Title
+        {
+            @extend .Page__blockTitle;
+        }
+
+        &Text
+        {
+            @extend .Page__blockText;
+        }
+    }
+
+    &__visual
+    {
+        order: 1;
+
+        @include make-col(12);
+        @extend .Page__blockVisual;
+        @include media-breakpoint-up(md)
+        {
+            order: 2;
+
+            @include make-col(6);
+        }
+
+        &Img
+        {
+            max-width: 75%;
+
+            @include margin-auto;
+            @include media-breakpoint-up(sm)
+            {
+                max-width: 55%;
+            }
+            @include media-breakpoint-up(md)
+            {
+                max-width: 75%;
+            }
+        }
+    }
+}
+
+.What
+{
+    @extend .Page__block;
+    @include make-row;
+
+    &__title
+    {
+        width: 100%;
+        height: 1px;
+
+        @include hidden;
+    }
+
+    &__designer,
+    &__developer,
+    &__gamer
+    {
+        display: flex;
+        flex-direction: column;
+
+        @include make-col(12);
+        @extend .Page__blockSub;
+        @include media-breakpoint-up(md)
+        {
+            padding-right: 30px;
+            padding-left: 30px;
+
+            @include make-col(4);
+        }
+
+        &Content
+        {
+            order: 2;
+
+            &Title
+            {
+                @extend .Page__blockTitleSub;
+            }
+
+            &Text
+            {
+                @extend .Page__blockText;
+            }
+        }
+
+        &Visual
+        {
+            order: 1;
+
+            @extend .Page__blockVisual;
+
+            &Img
+            {
+                max-width: 120px;
+
+                @include margin-auto;
+            }
+        }
+    }
+
+    &__content
+    {
+        order: 2;
+
+        @include make-col(12);
+
+        &Title
+        {
+            @extend .Page__blockTitle;
+        }
+
+        &Text
+        {
+            @extend .Page__blockText;
+        }
+    }
+
+    &__visual
+    {
+        order: 1;
+
+        @include make-col(12);
+
+        &Img
+        {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.Skillset
+{
+    flex-direction: column;
+
+    @extend .Page__block;
+    @include make-row;
+
+    &__title
+    {
+        @extend .Page__blockTitle;
+        @include media-breakpoint-up(md)
+        {
+            font-size: 1.5rem;
+
+            text-align: center;
+        }
+    }
+
+    &__list
+    {
+        @include media-breakpoint-up(md)
+        {
+            margin-right: 120px;
+            margin-left: 120px;
+        }
+
+        &Item
+        {
+            margin-bottom: 30px;
+
+            @include media-breakpoint-up(md)
+            {
+                display: flex;
+            }
+
+            &:last-child
+            {
+                margin-bottom: 0;
+            }
+
+            &Title
+            {
+                font-weight: 400;
+
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display:         flex;
+                align-items: center;
+
+                margin-bottom: 10px;
+
+                @include media-breakpoint-up(md)
+                {
+                    width: 40%;
+                }
+                @include media-breakpoint-up(lg)
+                {
+                    width: 30%;
+                }
+
+                &Icon
+                {
+                    display: inline-block;
+
+                    width: 3rem;
+                    height: 3rem;
+                    margin-right: 1rem;
+
+                    border-radius: 3rem;
+                    background-position: 50%;
+                    background-size: 65%;
+                    box-shadow: 0 3px 10px 0 #000;
+
+                    &--html
+                    {
+                        @extend .icon__html;
+                    }
+
+                    &--css
+                    {
+                        @extend .icon__css;
+                    }
+
+                    &--wordpress
+                    {
+                        @extend .icon__wordpress;
+                    }
+
+                    &--sass
+                    {
+                        @extend .icon__sass;
+                    }
+
+                    &--pug
+                    {
+                        @extend .icon__pug;
+                    }
+
+                    &--ui
+                    {
+                        @extend .icon__ui;
+                    }
+
+                    &--ux
+                    {
+                        @extend .icon__ux;
+                    }
+
+                    &--php
+                    {
+                        @extend .icon__php;
+                    }
+                }
+            }
+
+            &Score
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 100%;
+                margin: 0;
+
+                &Bar
+                {
+                    display: block;
+
+                    width: 80%;
+                    height: 18px;
+                    margin: 0;
+
+                    border-radius: 10px;
+                    background-color: #363636;
+
+                    &Gauge
+                    {
+                        display: flex;
+
+                        height: 18px;
+
+                        animation: html 1s ease-out;
+
+                        border-radius: 10px;
+                        background-color: #fff;
+
+                        &--html
+                        {
+                            width: 90%;
+                        }
+
+                        &--css
+                        {
+                            width: 90%;
+                        }
+
+                        &--wordpress
+                        {
+                            width: 85%;
+                        }
+
+                        &--sass
+                        {
+                            width: 80%;
+                        }
+
+                        &--pug
+                        {
+                            width: 80%;
+                        }
+
+                        &--ui
+                        {
+                            width: 80%;
+                        }
+
+                        &--ux
+                        {
+                            width: 75%;
+                        }
+
+                        &--php
+                        {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Software
+{
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+
+    @extend .Page__block;
+    @include make-row;
+
+    &__title
+    {
+        @extend .Page__blockTitle;
+        @include media-breakpoint-up(md)
+        {
+            font-size: 1.5rem;
+
+            text-align: center;
+        }
+    }
+
+    &__list
+    {
+        @include media-breakpoint-up(md)
+        {
+            margin-right: 120px;
+            margin-left: 120px;
+        }
+
+        &Item
+        {
+            font-size: .8rem;
+
+            display: inline-block;
+
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding: 1rem 1.5rem 1rem 4.5rem;
+
+            border-radius: 3rem;
+            background-color: #202020;
+            background-position: 2rem 50%;
+            background-size: 2rem;
+            box-shadow: 0 3px 10px 0 #000;
+
+            @include media-breakpoint-up(md)
+            {
+                font-size: 1rem;
+
+                margin-right: 30px;
+                margin-bottom: 30px;
+                padding: 1rem 2rem 1rem 5rem;
+            }
+
+            &--photoshop
+            {
+                @extend .icon__photoshop;
+            }
+
+            &--illustrator
+            {
+                @extend .icon__illustrator;
+            }
+
+            &--dreamweaver
+            {
+                @extend .icon__dreamweaver;
+            }
+
+            &--indesign
+            {
+                @extend .icon__indesign;
+            }
+
+            &--adobeXd
+            {
+                @extend .icon__adobeXd;
+            }
+
+            &--sketch
+            {
+                @extend .icon__sketch;
+            }
+
+            &--vsCode
+            {
+                @extend .icon__vsCode;
+            }
+
+            &--slack
+            {
+                @extend .icon__slack;
+            }
+
+            &--discord
+            {
+                @extend .icon__discord;
+            }
+
+            &--skype
+            {
+                @extend .icon__skype;
+            }
+        }
+    }
+}

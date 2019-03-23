@@ -1,0 +1,32 @@
+header.Header(data-aos='fade-down',data-aos-duration="1000")
+    .Header__inner
+        .Logo
+            a.Logo__link(href=meta.rootDir) Astlanox
+        nav.Nav
+            input.Nav__toggle(type="checkbox")
+            .Nav__hamburger
+                span
+            .Nav__menu
+                .Nav__menuInner
+                    .Nav__menuInnerNav
+                        .HeaderNav
+                            ul.HeaderNav__list
+                                li.HeaderNav__listItem.HeaderNav__listItem--home
+                                    a.HeaderNav__listItemLink(href=meta.rootDir) Home
+                                li.HeaderNav__listItem
+                                    a.HeaderNav__listItemLink(href=`${meta.rootDir}/about`) About
+                                li.HeaderNav__listItem
+                                    a.HeaderNav__listItemLink(href=`${meta.rootDir}/concept`) Concept
+                                li.HeaderNav__listItem
+                                    a.HeaderNav__listItemLink(href=`${meta.rootDir}/works`) Works
+                                li.HeaderNav__listItem.HeaderNav__listItem--contact
+                                    a.HeaderNav__listItemLink.HeaderNav__listItemLink--contact(href=`${meta.rootDir}/contact`) Contact
+                        .SelectLang
+                            ul.SelectLang__list
+                                li.SelectLang__listItem
+                                    a.SelectLang__listItemLink(class=`u-${locale}`)(href=enLink) EN
+                                li.SelectLang__listItem
+                                    a.SelectLang__listItemLink(class=`j-${locale}`)(href=jaLink) JA
+                    .Nav__menuInnerBg
+                        .HeaderBg
+                            img(src=`${meta.rootDir}/asset/images/header_bg_white.png`)

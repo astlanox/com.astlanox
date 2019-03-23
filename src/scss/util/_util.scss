@@ -1,0 +1,32 @@
+@mixin margin-auto()
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin hidden()
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-indent: 100%;
+    // visibility: hidden;
+}
+
+@mixin link-disable()
+{
+    cursor: default;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+@mixin br()
+{
+    content: '\A';
+    white-space: pre;
+}
+
+@mixin no-br()
+{
+    white-space: normal;
+}

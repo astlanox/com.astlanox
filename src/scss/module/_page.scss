@@ -1,0 +1,158 @@
+.Page
+{
+    margin-bottom: 120px;
+
+    @include container;
+
+    &__header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100vh;
+
+        text-transform: uppercase;
+
+        @include header-margin;
+
+        &Title
+        {
+            font-size: 2rem;
+            font-weight: 600;
+
+            margin-right: -1rem;
+
+            letter-spacing: 1rem;
+
+            @include media-breakpoint-up(sm)
+            {
+                font-size: 3rem;
+
+                margin-right: -1.5rem;
+
+                letter-spacing: 1.5rem;
+            }
+            @include media-breakpoint-up(md)
+            {
+                font-size: 4rem;
+
+                margin-right: -2rem;
+
+                letter-spacing: 2rem;
+            }
+            @include media-breakpoint-up(lg)
+            {
+                font-size: 5rem;
+
+                margin-right: -2.5rem;
+
+                letter-spacing: 2.5rem;
+            }
+            @include media-breakpoint-up(xl)
+            {
+                font-size: 6rem;
+
+                margin-right: -3rem;
+
+                letter-spacing: 3rem;
+            }
+        }
+    }
+
+    &__main
+    {
+        margin-top: 60px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        @include media-breakpoint-up(sm)
+        {
+            margin-top: 100px;
+        }
+        @include media-breakpoint-up(md)
+        {
+            margin-top: 132px;
+        }
+        @include media-breakpoint-up(lg)
+        {
+            margin-top: 202px;
+        }
+        @include media-breakpoint-up(xl)
+        {
+            margin-top: 262px;
+        }
+    }
+
+    &__block
+    {
+        margin-bottom: 60px;
+
+        @include media-breakpoint-up(md)
+        {
+            margin-bottom: 120px;
+        }
+        @include media-breakpoint-up(lg)
+        {
+            margin-bottom: 160px;
+        }
+        @include media-breakpoint-up(xl)
+        {
+            margin-bottom: 180px;
+        }
+
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+
+        &Sub
+        {
+            margin-bottom: 60px;
+
+            &:last-child
+            {
+                margin-bottom: 0;
+            }
+        }
+
+        &Title
+        {
+            font-size: 1.5rem;
+            font-weight: 400;
+
+            margin-bottom: 30px;
+
+            text-align: center;
+
+            @include media-breakpoint-up(md)
+            {
+                text-align: left;
+            }
+            @include media-breakpoint-up(xl)
+            {
+                font-size: 4rem;
+            }
+
+            &Sub
+            {
+                font-size: 1.2rem;
+                font-weight: 400;
+
+                margin-bottom: 30px;
+
+                text-align: center;
+            }
+        }
+
+        &Text
+        {
+            font-weight: 200;
+        }
+
+        &Visual
+        {
+            margin-bottom: 30px;
+        }
+    }
+}

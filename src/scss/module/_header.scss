@@ -1,0 +1,482 @@
+.Header
+{
+    position: relative;
+
+    @include media-breakpoint-up(md)
+    {
+        & a,
+        & a:visited,
+        & a:hover,
+        & a:active,
+        & a:focus
+        {
+            color: $text-color !important;
+        }
+    }
+
+    & a,
+    & a:visited,
+    & a:hover,
+    & a:active,
+    & a:focus
+    {
+        color: $primary-color;
+    }
+
+    &__inner
+    {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @include media-breakpoint-up(md)
+        {
+            display: flex;
+            justify-content: space-between;
+
+            margin-right: 60px;
+            margin-left: 60px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        @include media-breakpoint-up(lg)
+        {
+            margin-right: 90px;
+            margin-left: 90px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        @include media-breakpoint-up(xl)
+        {
+            max-width: 1680px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+    }
+}
+
+.Logo
+{
+    &__link
+    {
+        display: block;
+
+        width: 158px;
+        height: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        background: url('/asset/images/header_logo.png');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+
+        @include hidden;
+        @include media-breakpoint-up(lg)
+        {
+            width: 190px;
+            height: 62px;
+            padding-top: 41px;
+            padding-bottom: 41px;
+        }
+    }
+}
+
+.Nav
+{
+    &__toggle
+    {
+        position: fixed;
+        z-index: 102;
+        top: 20px;
+        right: 20px;
+
+        display: block;
+
+        width: 60px;
+        height: 60px;
+        margin: 0;
+
+        opacity: 0;
+
+        @include media-breakpoint-up(md)
+        {
+            display: none;
+        }
+
+        &:checked
+        {
+             + .Nav__hamburger > span
+            {
+                transform: rotate(135deg);
+
+                &:before
+                {
+                    top: 0;
+
+                    transform: rotate(90deg);
+                }
+
+                &:after
+                {
+                    top: 0;
+
+                    transform: rotate(90deg);
+
+                    opacity: 0;
+                }
+            }
+
+             ~ .Nav__menu
+            {
+                visibility: visible;
+
+                 > div
+                {
+                    transition-duration: .3s;
+                    transform: scale(1);
+                }
+            }
+
+            &:hover + .Nav__hamburger > span
+            {
+                transform: rotate(225deg);
+            }
+        }
+    }
+
+    &__hamburger
+    {
+        position: fixed;
+        z-index: 101;
+        top: 20px;
+        right: 20px;
+
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        padding: .5em 1em;
+
+        transition: box-shadow .4s ease;
+
+        border-radius: 30px;
+        background: $primary-color;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+
+        @include media-breakpoint-up(md)
+        {
+            display: none;
+        }
+
+         > span
+        {
+            position: relative;
+            top: 20px;
+
+            display: block;
+
+            width: 100%;
+            height: 5px;
+
+            transition: all .4s ease;
+
+            border-radius: 2.5px;
+            background: #fefefe;
+
+            &:before
+            {
+                position: absolute;
+                z-index: 1001;
+                top: -10px;
+                left: 0;
+
+                display: block;
+
+                width: 100%;
+                height: 5px;
+
+                content: '';
+                transition: all .4s ease;
+
+                border-radius: 2.5px;
+                background: inherit;
+            }
+
+            &:after
+            {
+                position: absolute;
+                z-index: 1001;
+                top: -10px;
+                top: 10px;
+                left: 0;
+
+                display: block;
+
+                width: 100%;
+                height: 5px;
+
+                content: '';
+                transition: all .4s ease;
+
+                border-radius: 2.5px;
+                background: inherit;
+            }
+        }
+    }
+
+    &__menu
+    {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        visibility: hidden;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        @include media-breakpoint-up(md)
+        {
+            position: unset;
+
+            display: block;
+            visibility: visible;
+            overflow: visible;
+        }
+
+        &Inner
+        {
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            flex: none;
+            justify-content: space-between;
+
+            width: 250vw;
+            height: 250vw;
+
+            transition: all .2s ease;
+            transform: scale(0);
+            text-align: center;
+
+            border-radius: 50%;
+            background: #fff;
+
+            @include media-breakpoint-up(md)
+            {
+                display: block;
+                overflow: visible;
+
+                width: auto;
+                height: auto;
+
+                transform: none;
+
+                background: none;
+            }
+
+            &Nav
+            {
+                margin-left: 75vw;
+                padding-left: 30px;
+
+                text-align: left;
+
+                @include media-breakpoint-up(md)
+                {
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            }
+
+            &Bg
+            {
+                margin-right: 75vw;
+
+                @include media-breakpoint-up(md)
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.HeaderNav
+{
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md)
+    {
+        margin-bottom: 0;
+    }
+
+    &__list
+    {
+        &Item
+        {
+            font-size: 1.6rem;
+            font-weight: 700;
+
+            @include media-breakpoint-up(md)
+            {
+                font-size: 1.2rem;
+                font-weight: 200;
+
+                display: inline-block;
+
+                &:last-child
+                {
+                    border: 1px solid #fff;
+                    border-radius: 3rem;
+                }
+            }
+
+            &--home
+            {
+                @include media-breakpoint-up(md)
+                {
+                    display: none;
+                }
+            }
+
+            &--contact
+            {
+                @include media-breakpoint-up(md)
+                {
+                    margin-left: 1rem;
+                }
+                @include media-breakpoint-up(lg)
+                {
+                    margin-left: 2rem;
+                }
+            }
+
+            &:last-child
+            {
+                margin-bottom: 0;
+            }
+
+            &Link
+            {
+                display: inline-block;
+
+                padding: 1rem;
+
+                @include media-breakpoint-up(md)
+                {
+                    padding: 1rem;
+                }
+                @include media-breakpoint-up(lg)
+                {
+                    padding: 1rem 2rem;
+                }
+
+                &--contact
+                {
+                    @include media-breakpoint-up(md)
+                    {
+                        padding: 1rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.SelectLang
+{
+    @include media-breakpoint-up(md)
+    {
+        display: none;
+    }
+
+    &__list
+    {
+        &Item
+        {
+            display: inline-block;
+
+
+
+            &:first-child
+            {
+                padding-right: 0;
+
+                &:after
+                {
+                    content: '|';
+
+                    color: $primary-color;
+                }
+            }
+
+            &Link
+            {
+                font-weight: 700;
+
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.u-en,
+.j-ja
+{
+    @include link-disable;
+}
+
+.HeaderBg
+{
+    height: 100vh;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > div > ul li,
+.Nav__toggle:checked ~ .Nav__menu > div > div > div > img
+{
+    opacity: 0;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > .HeaderNav > ul li:nth-of-type(1)
+{
+    animation: fadeIn 1.6s ease .2s 1 forwards;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > .HeaderNav > ul li:nth-of-type(2)
+{
+    animation: fadeIn 1.6s ease .3s 1 forwards;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > .HeaderNav > ul li:nth-of-type(3)
+{
+    animation: fadeIn 1.6s ease .4s 1 forwards;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > .HeaderNav > ul li:nth-of-type(4)
+{
+    animation: fadeIn 1.6s ease .5s 1 forwards;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > .HeaderNav > ul li:nth-of-type(5)
+{
+    animation: fadeIn 1.6s ease .6s 1 forwards;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > .SelectLang > ul li
+{
+    animation: fadeIn 1.6s ease .7s 1 forwards;
+}
+
+.Nav__toggle:checked ~ .Nav__menu > div > div > .HeaderBg > img
+{
+    animation: fadeIn 1.6s ease .8s 1 forwards;
+}

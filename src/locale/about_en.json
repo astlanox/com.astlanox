@@ -1,0 +1,27 @@
+{
+    "locale": "en",
+    "title": "About - Astlanox",
+    "name": "About",
+    "description": "DescriptionHere",
+    "enLink": "/about",
+    "jaLink": "/ja/about",
+    "hrefLang": "ja",
+    "hrefLangLink": "/ja/about",
+
+    "hiTitle": "Hi! I am Astlanox.",
+    "hiText": "Welcome to my Web site! I am a UI/UX designer and Developer based in Tokyo. I have experience with App design and Web creation and also developing them. and love the design, engineering, and my job!",
+
+    "whatTitle": "What I do?",
+
+    "whatDesignerTitle": "UI/UX Designer",
+    "whatDesignerText": "I love the design! I love everything about design, include seeing, searching and creating. I am happy when I found a beautiful design that I like. When I create one myself, I consider both beauty and usability first.",
+
+    "whatDeveloperTitle": "Developer",
+    "whatDeveloperText": "I became interested in development when I learned HTML and CSS in a class in junior high school. The reason for starting it was the Web, so there were many opportunities to deal with WordPress, and the first language I learned was PHP. Currently, I am studying iOS application development and backend, and I aim to be a Develoner (Designer + Developer).",
+
+    "whatGamerTitle": "Gamer",
+    "whatGamerText": "I like playing the game. I play various games such as FPS, TPS, RPG, racing, and simulator. When you find my id in game, just say “hi!”. And also teabagging me!",
+
+    "skillsetTitle": "Skillset",
+    "softwareTitle": "Software"
+}
