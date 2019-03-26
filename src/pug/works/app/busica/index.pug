@@ -6,62 +6,62 @@ html(lang=locale)
     body
         main.WorksItem
             .WorksItem__header
-                h1.WorksItem__headerTitle #{appBusica.name}
-                img.WorksItem__headerVisual(src=`${meta.rootDir}asset/images/app/busica/busica_mv.png`)
+                h1.WorksItem__headerTitle(data-aos="zoom-in") #{appBusica.name}
+                img.WorksItem__headerVisual(src=`${meta.rootDir}asset/images/app/busica/busica_mv.png`, data-aos="fade-up", data-aos-anchor-placement="top-bottom")
             .WorksItem__main
                 section.AppBusica__information
-                    h2.AppBusica__informationTitle #{appBusica.information}
+                    h2.AppBusica__informationTitle #{worksItem.information}
                     section.AppBusica__informationSkill
-                        h3.AppBusica__informationSkillTitle #{appBusica.skill}
+                        h3.AppBusica__informationSkillTitle #{worksItem.skill}
                         ol.AppBusica__informationSkillList
                             li.AppBusica__informationSkillListItem.AppBusica__informationSkillListItem--ui UI Design
                             li.AppBusica__informationSkillListItem.AppBusica__informationSkillListItem--ux UX Design
                     section.AppBusica__informationSoftware
-                        h3.AppBusica__informationSoftwareTitle #{appBusica.software}
+                        h3.AppBusica__informationSoftwareTitle #{worksItem.software}
                         ol.AppBusica__informationSoftwareList
                             li.AppBusica__informationSoftwareListItem.AppBusica__informationSoftwareListItem--illustrator Illustrator
                             li.AppBusica__informationSoftwareListItem.AppBusica__informationSoftwareListItem--adobeXd Adobe XD
                             li.AppBusica__informationSoftwareListItem.AppBusica__informationSoftwareListItem--sketch Sketch
                     section.AppBusica__informationDetail
-                        h3.AppBusica__informationDetailTitle #{appBusica.detail}
+                        h3.AppBusica__informationDetailTitle #{worksItem.detail}
                         dl.AppBusica__informationDetailList
                             .AppBusica__informationDetailListItem
-                                dt.AppBusica__informationDetailListItemTitle #{appBusica.client}
+                                dt.AppBusica__informationDetailListItemTitle #{worksItem.client}
                                 dd.AppBusica__informationDetailListItemText #{appBusica.clientText}
                             .AppBusica__informationDetailListItem
-                                dt.AppBusica__informationDetailListItemTitle #{appBusica.launch}
+                                dt.AppBusica__informationDetailListItemTitle #{worksItem.launch}
                                 dd.AppBusica__informationDetailListItemText #{appBusica.launchText}
                             .AppBusica__informationDetailListItem
-                                dt.AppBusica__informationDetailListItemTitle #{appBusica.type}
+                                dt.AppBusica__informationDetailListItemTitle #{worksItem.type}
                                 dd.AppBusica__informationDetailListItemText #{appBusica.typeText}
                             .AppBusica__informationDetailListItem
-                                dt.AppBusica__informationDetailListItemTitle #{appBusica.charge}
+                                dt.AppBusica__informationDetailListItemTitle #{worksItem.charge}
                                 dd.AppBusica__informationDetailListItemText #{appBusica.chargeText}
                 section.AppBusica__about
-                    h2.AppBusica__aboutTitle #{appBusica.about}
+                    h2.AppBusica__aboutTitle #{worksItem.about}
                     p.AppBusica__aboutText #{appBusica.aboutText}
                 section.AppBusica__identity
-                    h2.AppBusica__identityTitle #{appBusica.identity}
+                    h2.AppBusica__identityTitle #{worksItem.identity}
                     p.AppBusica__identityText #{appBusica.identityText}
                     section.AppBusica__logo
-                        h3.AppBusica__logoTitle #{appBusica.logo}
+                        h3.AppBusica__logoTitle #{worksItem.logo}
                         p.AppBusica__logoVisual
                             img(src=`${meta.rootDir}asset/images/app/busica/busica_img_logo.png`)
                     section.AppBusica__color
-                        h3.AppBusica__colorTitle #{appBusica.color}
+                        h3.AppBusica__colorTitle #{worksItem.color}
                         p.AppBusica__colorVisual
                             img(src=`${meta.rootDir}asset/images/app/busica/busica_img_color.png`)
                     section.AppBusica__typography
-                        h3.AppBusica__typographyTitle #{appBusica.typography}
+                        h3.AppBusica__typographyTitle #{worksItem.typography}
                         p.AppBusica__typographyVisual
                             img(src=`${meta.rootDir}asset/images/app/busica/busica_img_typography.png`)
                 section.AppBusica__ux
-                    h2.AppBusica__uxTitle #{appBusica.ux}
+                    h2.AppBusica__uxTitle #{worksItem.ux}
                     p.AppBusica__uxText #{appBusica.uxText}
                     p.AppBusica__uxVisual
                         img(src=`${meta.rootDir}asset/images/app/busica/busica_img_ux.png`)
                 section.AppBusica__ui
-                    h2.AppBusica__uiTitle #{appBusica.ui}
+                    h2.AppBusica__uiTitle #{worksItem.ui}
                     p.AppBusica__uiText #{appBusica.uiText}
                     p.AppBusica__uiVisual
                         img(src=`${meta.rootDir}asset/images/app/busica/busica_img_ui.png`)
@@ -83,12 +83,12 @@ html(lang=locale)
                             p.AppBusica__screenMessageVisual
                                 img(src=`${meta.rootDir}asset/images/app/busica/busica_img_screen_03.png`)
                     section.AppBusica__dark
-                        h3.AppBusica__darkTitle #{appBusica.dark}
+                        h3.AppBusica__darkTitle #{worksItem.dark}
                         p.AppBusica__darkText #{appBusica.darkText}
                         p.AppBusica__darkVisual
                             img(src=`${meta.rootDir}asset/images/app/busica/busica_img_dark.png`)
                     section.AppBusica__icon
-                        h3.AppBusica__iconTitle #{appBusica.icon}
+                        h3.AppBusica__iconTitle #{worksItem.icon}
                         p.AppBusica__iconText #{appBusica.iconText}
                         p.AppBusica__iconVisual
                             img(src=`${meta.rootDir}asset/images/app/busica/busica_img_icon.png`)

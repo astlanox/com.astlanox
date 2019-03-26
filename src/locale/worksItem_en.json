@@ -1,0 +1,43 @@
+{
+    "information": "Information",
+    "skill": "Skill",
+    "software": "Software",
+
+    "detail": "Detail",
+    "client": "Client",
+    "launch": "Launch",
+    "type": "Type",
+    "charge": "Charge",
+
+    "about": "About",
+
+    "identity": "Identity",
+    "logo": "Logo",
+    "color": "Color Guideline",
+    "typography": "Typography Guideline",
+
+    "ux": "UX Design",
+
+    "ui": "UI Design",
+
+    "dark": "Dark Theme",
+
+    "icon": "Icon",
+
+    "concept": "Concept",
+
+    "responsible": "Responsible",
+
+    "illustration": "Illustration",
+
+    "visual": "Visual",
+
+    "autoReply": "Auto Reply",
+
+    "animation": "Animation",
+
+    "technology": "Technology",
+    "sass": "Sass",
+    "bem": "BEM"
+
+}

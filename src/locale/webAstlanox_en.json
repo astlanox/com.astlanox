@@ -1,0 +1,25 @@
+{
+    "locale": "en",
+    "title": "Astlanox - Astlanox",
+    "name": "Astlanox",
+    "description": "This is portfolio of my portfolio Web site.",
+    "enLink": "works/web/astlanox/",
+    "jaLink": "ja/works/web/astlanox/",
+    "hrefLang": "ja-JA",
+    "hrefLangLink": "ja/works/web/astlanox/",
+    "langLink": "works/web/astlanox/",
+
+    "clientText": "-",
+    "launchText": "2019/03/18",
+    "typeText": "Web Design",
+    "chargeText": "Plannign, Web Design, Graphic Design, Writing",
+
+    "aboutText": "私のWebサイト（当サイト）のポートフォリオです。見た目やユーザー体験だけでなく、運用のしやすさまで考えてこだわって作り上げました。運用のしやすさや視認性を考慮してSassとPugを採用しました。また、英語と日本語の２つの言語に対応しています。",
+
+    "conceptText": "私自身の名前からも連想できる「宇宙」をコンセプトとして設定しました。ロゴや色使いからAstlanoxという名前を思い出していただけるように意識してデザインしています。",
+
+    "responsibleText": "PC、タブレット、スマートフォン間でデバイスによる情報や印象に差異が出ないように、レスポンシブルデザインで作成されています。",
+
+    "sassText": "通常のCSSよりも管理・運用がしやすいSassで記述されています。",
+    "bemText": "公開後の運用と可読性を考慮してBem記法を採用しました。"
+}

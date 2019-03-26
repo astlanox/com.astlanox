@@ -1,0 +1,133 @@
+-var page = webAstlanox
+include ../../../module/_locale
+doctype html
+html(lang=locale)
+    include ../../../module/_head
+    body
+        main.WorksItem
+            .WorksItem__header
+                h1.WorksItem__headerTitle(data-aos="zoom-in") #{webAstlanox.name}
+                img.WorksItem__headerVisual(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_mv.png`, data-aos="fade-up", data-aos-anchor-placement="top-bottom")
+            .WorksItem__main
+                section.WebAstlanox__information
+                    h2.WebAstlanox__informationTitle #{worksItem.information}
+                    section.WebAstlanox__informationSkill
+                        h3.WebAstlanox__informationSkillTitle #{worksItem.skill}
+                        ol.WebAstlanox__informationSkillList
+                            li.WebAstlanox__informationSkillListItem.WebAstlanox__informationSkillListItem--html HTML
+                            li.WebAstlanox__informationSkillListItem.WebAstlanox__informationSkillListItem--css CSS
+                            li.WebAstlanox__informationSkillListItem.WebAstlanox__informationSkillListItem--pug Pug
+                            li.WebAstlanox__informationSkillListItem.WebAstlanox__informationSkillListItem--sass Sass
+                    section.WebAstlanox__informationSoftware
+                        h3.WebAstlanox__informationSoftwareTitle #{worksItem.software}
+                        ol.WebAstlanox__informationSoftwareList
+                            li.WebAstlanox__informationSoftwareListItem.WebAstlanox__informationSoftwareListItem--illustrator Illustrator
+                            li.WebAstlanox__informationSoftwareListItem.WebAstlanox__informationSoftwareListItem--vsCode VS Code
+                    section.WebAstlanox__informationDetail
+                        h3.WebAstlanox__informationDetailTitle #{worksItem.detail}
+                        dl.WebAstlanox__informationDetailList
+                            .WebAstlanox__informationDetailListItem
+                                dt.WebAstlanox__informationDetailListItemTitle #{worksItem.client}
+                                dd.WebAstlanox__informationDetailListItemText #{webAstlanox.clientText}
+                            .WebAstlanox__informationDetailListItem
+                                dt.WebAstlanox__informationDetailListItemTitle #{worksItem.launch}
+                                dd.WebAstlanox__informationDetailListItemText #{webAstlanox.launchText}
+                            .WebAstlanox__informationDetailListItem
+                                dt.WebAstlanox__informationDetailListItemTitle #{worksItem.type}
+                                dd.WebAstlanox__informationDetailListItemText #{webAstlanox.typeText}
+                            .WebAstlanox__informationDetailListItem
+                                dt.WebAstlanox__informationDetailListItemTitle #{worksItem.charge}
+                                dd.WebAstlanox__informationDetailListItemText #{webAstlanox.chargeText}
+                section.WebAstlanox__about
+                    h2.WebAstlanox__aboutTitle #{worksItem.about}
+                    p.WebAstlanox__aboutText #{webAstlanox.aboutText}
+                section.WebAstlanox__concept
+                    h2.WebAstlanox__conceptTitle #{worksItem.concept}
+                    p.WebAstlanox__conceptText #{webAstlanox.conceptText}
+                section.WebAstlanox__responsible
+                    h2.WebAstlanox__responsibleTitle #{worksItem.responsible}
+                    p.WebAstlanox__responsibleText #{webAstlanox.responsibleText}
+                    p.WebAstlanox__responsibleVisual
+                        img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_responsible.png`)
+                section.WebAstlanox__illustration
+                    h2.WebAstlanox__illustrationTitle #{worksItem.illustration}
+                    p.WebAstlanox__illustrationVisual
+                        img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_illustration.png`)
+                section.WebAstlanox__visual
+                    h2.WebAstlanox__visualTitle #{worksItem.visual}
+                    section.WebAstlanox__autoReply
+                        h3.WebAstlanox__autoReplyTitle #{worksItem.autoReply}
+                section.WebAstlanox__animation
+                    h2.WebAstlanox__animationTitle #{worksItem.animation}
+                section.WebAstlanox__technology
+                    h2.WebAstlanox__technologyTitle #{worksItem.technology}
+                    section.WebAstlanox__sass
+                        h3.WebAstlanox__sassTitle #{worksItem.sass}
+                        p #{webAstlanox.sassText}
+                    section.WebAstlanox__bem
+                        h3.WebAstlanox__bemTitle #{worksItem.bem}
+                        p #{webAstlanox.bemText}
+            .WorksItem__footer
+                p.WorksItem__footerMessage
+                    |Made with 
+                    span.WorksItem__footerMessageLove love
+                    |  and 
+                    span.WorksItem__footerMessageCoffee coffee
+                    |  by Astlanox.
+            .WorksItem__close
+                a(href=`${meta.rootDir + works.langLink}`)
+                    span.WorksItem__closeButton
+        include ../../../module/_script
+//- here
+                section.AppBusica__identity
+                    h2.AppBusica__identityTitle #{worksItem.identity}
+                    p.AppBusica__identityText #{webAstlanox.identityText}
+                    section.AppBusica__logo
+                        h3.AppBusica__logoTitle #{worksItem.logo}
+                        p.AppBusica__logoVisual
+                            img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_logo.png`)
+                    section.AppBusica__color
+                        h3.AppBusica__colorTitle #{worksItem.color}
+                        p.AppBusica__colorVisual
+                            img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_color.png`)
+                    section.AppBusica__typography
+                        h3.AppBusica__typographyTitle #{worksItem.typography}
+                        p.AppBusica__typographyVisual
+                            img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_typography.png`)
+                section.AppBusica__ux
+                    h2.AppBusica__uxTitle #{worksItem.ux}
+                    p.AppBusica__uxText #{appBusica.uxText}
+                    p.AppBusica__uxVisual
+                        img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_ux.png`)
+                section.AppBusica__ui
+                    h2.AppBusica__uiTitle #{worksItem.ui}
+                    p.AppBusica__uiText #{appBusica.uiText}
+                    p.AppBusica__uiVisual
+                        img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_ui.png`)
+                    section.AppBusica__screen
+                        h3.AppBusica__screenTitle #{appBusica.screen}
+                        section.AppBusica__screenMain
+                            h4.AppBusica__screenMainTitle #{appBusica.main}
+                            p.AppBusica__screenMainText #{appBusica.mainText}
+                            p.AppBusica__screenMainVisual
+                                img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_screen_01.png`)
+                        section.AppBusica__screenContact
+                            h4.AppBusica__screenContactTitle #{appBusica.contact}
+                            p.AppBusica__screenContactText #{appBusica.contactText}
+                            p.AppBusica__screenContactVisual
+                                img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_screen_02.png`)
+                        section.AppBusica__screenMessage
+                            h4.AppBusica__screenMessageTitle #{appBusica.message}
+                            p.AppBusica__screenMessageText #{appBusica.messageText}
+                            p.AppBusica__screenMessageVisual
+                                img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_screen_03.png`)
+                    section.AppBusica__dark
+                        h3.AppBusica__darkTitle #{worksItem.dark}
+                        p.AppBusica__darkText #{appBusica.darkText}
+                        p.AppBusica__darkVisual
+                            img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_dark.png`)
+                    section.AppBusica__icon
+                        h3.AppBusica__iconTitle #{worksItem.icon}
+                        p.AppBusica__iconText #{appBusica.iconText}
+                        p.AppBusica__iconVisual
+                            img(src=`${meta.rootDir}asset/images/web/astlanox/busica_img_icon.png`)

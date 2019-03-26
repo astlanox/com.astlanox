@@ -452,6 +452,14 @@
 .HeaderBg
 {
     height: 100vh;
+
+    &__img
+    {
+        width: auto;
+        height: 100%;
+
+        filter: drop-shadow(0 20px 10px rgba(0, 0, 0, .3));
+    }
 }
 
 .Nav__toggle:checked ~ .Nav__menu > div > div > div > ul li,
@@ -492,5 +500,5 @@
 
 .Nav__toggle:checked ~ .Nav__menu > div > div > .HeaderBg > img
 {
-    animation: fadeIn 1.6s ease .8s 1 forwards;
+    animation: fadeIn 3.2s ease .8s 1 forwards;
 }

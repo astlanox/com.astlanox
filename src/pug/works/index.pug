@@ -14,9 +14,19 @@ html(lang=locale)
                     ul.Archive__list
                         li.Archive__listItem(data-aos='fade-up')
                             .Archive__listItemContent
+                                h2.Archive__listItemContentTitle #{webAstlanox.name}
+                                p.Archive__listItemContentType
+                                    span.Archive__listItemContentTypeText #{webAstlanox.typeText}
+                                p.Archive__listItemContentDescription #{webAstlanox.description}
+                                p.Archive__listItemContentMore
+                                    a.Archive__listItemContentMoreLink(href=`${meta.rootDir + webAstlanox.langLink}`) #{works.more}
+                            .Archive__listItemVisual
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_thumnail.png`)
+                        li.Archive__listItem(data-aos='fade-up')
+                            .Archive__listItemContent
                                 h2.Archive__listItemContentTitle #{appBusica.name}
                                 p.Archive__listItemContentType
-                                    span.Archive__listItemContentTypeText #{appBusica.type}
+                                    span.Archive__listItemContentTypeText #{appBusica.typeText}
                                 p.Archive__listItemContentDescription #{appBusica.description}
                                 p.Archive__listItemContentMore
                                     a.Archive__listItemContentMoreLink(href=`${meta.rootDir + appBusica.langLink}`) #{works.more}

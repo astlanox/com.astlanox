@@ -1,0 +1,25 @@
+{
+    "locale": "en",
+    "title": "Astlanox - Astlanox",
+    "name": "Astlanox",
+    "description": "This is portfolio of my portfolio Web site.",
+    "enLink": "works/web/astlanox/",
+    "jaLink": "ja/works/web/astlanox/",
+    "hrefLang": "ja-JA",
+    "hrefLangLink": "ja/works/web/astlanox/",
+    "langLink": "works/web/astlanox/",
+
+    "information": "Information",
+    "skill": "Skill",
+    "software": "Software",
+
+    "detail": "Detail",
+    "client": "Client",
+    "clientText": "-",
+    "launch": "Launch",
+    "launchText": "-",
+    "type": "Type",
+    "typeText": "App Design",
+    "charge": "Charge",
+    "chargeText": "Plannign, UI design, UX design, Icon design"
+}

@@ -176,6 +176,11 @@
         {
             @extend .WorksItem__mainBlockText;
         }
+
+        &Visual
+        {
+            @extend .WorksItem__mainBlockInnerMargin;
+        }
     }
 
     &__screenMain,

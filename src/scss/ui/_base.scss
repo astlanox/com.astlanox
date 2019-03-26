@@ -11,7 +11,7 @@ xl: 1840px);
 
 $primary-color: #202020;
 $secondly-color: #707070;
-$accent-color: #a33b3b;
+$accent-color: #a53f3f;
 $text-color: #fff;
 
 body
@@ -78,6 +78,7 @@ a:focus
 
     color: $text-color;
     border: 0;
+    outline: none;
 }
 
 dl,
@@ -92,8 +93,9 @@ ol
 
 img
 {
+    width: 100%;
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
 }
 
 .Scroll

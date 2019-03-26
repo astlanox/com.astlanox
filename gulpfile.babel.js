@@ -2,17 +2,13 @@
 
 import gulp from 'gulp';
 import pug from 'gulp-pug';
-import srcset from 'gulp-sugar-srcset';
 import readConfig from 'read-config';
-import sass from 'gulp-sass';
 import imgRetina from 'gulp-img-retina';
+import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
 import rename from 'gulp-rename';
 import base64 from 'gulp-base64';
-import imagemin from 'gulp-imagemin';
-import imageminPngquant from 'imagemin-pngquant';
-import imageminMozjpeg from 'imagemin-mozjpeg';
 import uglify from 'gulp-uglify';
 import browserSync from 'browser-sync';
 import plumber from 'gulp-plumber';
@@ -48,10 +44,11 @@ const pugTask = (lang) => {
         'about': readConfig(`${SRC}/locale/about_` + lang + `.json`),
         'concept': readConfig(`${SRC}/locale/concept_` + lang + `.json`),
         'works': readConfig(`${SRC}/locale/works_` + lang + `.json`),
+        'worksItem': readConfig(`${SRC}/locale/worksItem_` + lang + `.json`),
         'contact': readConfig(`${SRC}/locale/contact_` + lang + `.json`),
         'appBusica': readConfig(`${SRC}/locale/appBusica_` + lang + `.json`),
         // 'webBusica': readConfig(`${SRC}/locale/webBusica_` + lang + `.json`),
-        // 'webAstlanox': readConfig(`${SRC}/locale/webAstlanox_` + lang + `.json`),
+        'webAstlanox': readConfig(`${SRC}/locale/webAstlanox_` + lang + `.json`),
         // 'appInfuse': readConfig(`${SRC}/locale/appInfuse_` + lang + `.json`)
     }
     return gulp.src(
@@ -66,7 +63,7 @@ const pugTask = (lang) => {
             locals: locals,
             pretty: true
         }))
-        .pipe(srcset())
+        .pipe(imgRetina())
         .pipe(gulp.dest(`${destDir}`));
 }
 
@@ -88,7 +85,6 @@ gulp.task("css", function (done) {
                 errorHandler: notify.onError("Error: <%= error.message %>")
             })
         )
-        .pipe(imgRetina())
         .pipe(
             sass({
                 outputStyle: "expanded"
@@ -102,8 +98,7 @@ gulp.task("css", function (done) {
         .pipe(base64({
             baseDir: 'public',
             extensions: ['svg', 'png', 'gif', /\.jpg#datauri$/i],
-            maxImageSize: 8 * 1024,
-            debug: true
+            maxImageSize: 8 * 1024
         }))
         .pipe(gulp.dest(paths.public.css))
         .pipe(cleanCSS())
@@ -130,25 +125,8 @@ gulp.task("javascript", function (done) {
 });
 
 gulp.task("image", function () {
-    var option = [
-        imageminPngquant({
-            quality: [.7, .85]
-        }),
-        imageminMozjpeg({
-            quality: 85
-        }),
-        imagemin.gifsicle({
-            interlaced: false,
-            optimizationLevel: 1,
-            colors: 256
-        }),
-        imagemin.jpegtran(),
-        imagemin.optipng(),
-        imagemin.svgo()
-    ];
     return gulp
         .src(paths.src.datauri)
-        .pipe(imagemin(option))
         .pipe(gulp.dest(paths.public.images));
 });
 
