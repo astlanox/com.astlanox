@@ -1,0 +1,340 @@
+.WorksItem
+{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    padding: 20px;
+
+    color: $primary-color;
+    border-radius: 20px;
+    background-color: $text-color;
+
+    @include media-breakpoint-up(sm)
+    {
+        margin: 60px;
+        padding: 60px;
+    }
+    @include media-breakpoint-up(lg)
+    {
+        margin: 90px;
+        padding: 120px;
+
+        border-radius: 30px;
+    }
+    @include media-breakpoint-up(xl)
+    {
+        max-width: 1300px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+
+        border-radius: 60px;
+
+        @include margin-auto;
+    }
+
+    &__header
+    {
+        display: flex;
+        flex-direction: column;
+
+        border-bottom: 1px solid $primary-color;
+
+        &Title
+        {
+            font-size: 1.5rem;
+
+            order: 2;
+
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            text-align: center;
+
+            @include media-breakpoint-up(sm)
+            {
+                font-size: 2rem;
+            }
+            @include media-breakpoint-up(lg)
+            {
+                font-size: 2.8rem;
+            }
+        }
+
+        &Visual
+        {
+            order: 1;
+        }
+    }
+
+    &__main
+    {
+        padding-top: 20px;
+        padding-bottom: 60px;
+
+        &Block
+        {
+            margin-bottom: 60px;
+
+            @include media-breakpoint-up(md)
+            {
+                margin-bottom: 90px;
+            }
+            @include media-breakpoint-up(lg)
+            {
+                margin-bottom: 120px;
+            }
+
+            &:last-child
+            {
+                margin-bottom: 0;
+            }
+
+            &Sub
+            {
+                margin-top: 60px;
+
+                @include media-breakpoint-up(md)
+                {
+                    margin-top: 90px;
+                }
+                @include media-breakpoint-up(lg)
+                {
+                    margin-top: 120px;
+                }
+
+                &Min
+                {
+                    margin-bottom: 30px;
+
+                    @include media-breakpoint-up(md)
+                    {
+                        margin-bottom: 60px;
+                    }
+                    @include media-breakpoint-up(lg)
+                    {
+                        margin-bottom: 90px;
+                    }
+                }
+            }
+
+            &Title
+            {
+                font-size: 1.5rem;
+                font-weight: 400;
+
+                margin-bottom: 30px;
+
+                text-align: center;
+
+                @include media-breakpoint-up(lg)
+                {
+                    font-size: 2.5rem;
+
+                    margin-bottom: 60px;
+
+                    text-align: left;
+                }
+                @include media-breakpoint-up(xl)
+                {
+                    font-size: 3rem;
+                }
+
+                &--information
+                {
+                    width: 100%;
+                    height: 1px;
+
+                    @include hidden;
+                }
+
+                &Sub
+                {
+                    font-weight: 400;
+
+                    margin-top: 60px;
+                    margin-bottom: 30px;
+
+                    @include media-breakpoint-up(lg)
+                    {
+                        font-size: 1.5rem;
+
+                        margin-bottom: 60px;
+                    }
+                    @include media-breakpoint-up(xl)
+                    {
+                        font-size: 1.8rem;
+                    }
+
+                    &--information
+                    {
+                        font-size: 1rem;
+
+                        margin-bottom: 30px;
+
+                        @include media-breakpoint-up(lg)
+                        {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    &--detail
+                    {
+                        width: 100%;
+                        height: 1px;
+
+                        @include hidden;
+                    }
+
+                    &Min
+                    {
+                        font-weight: 400;
+
+                        margin-bottom: 15px;
+
+                        @include media-breakpoint-up(lg)
+                        {
+                            font-size: 1.2rem;
+
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+
+            &Text
+            {
+                font-weight: 300;
+            }
+
+            &Visual
+            {
+                &--full
+                {
+                    margin-right: -20px;
+                    margin-left: -20px;
+
+                    @include media-breakpoint-up(sm)
+                    {
+                        margin-right: -60px;
+                        margin-left: -60px;
+                    }
+                    @include media-breakpoint-up(lg)
+                    {
+                        margin-right: -120px;
+                        margin-left: -120px;
+                    }
+                }
+            }
+
+            &InnerMargin
+            {
+                margin-top: 30px;
+
+                @include media-breakpoint-up(md)
+                {
+                    margin-top: 60px;
+                }
+                @include media-breakpoint-up(lg)
+                {
+                    margin-top: 60px;
+                }
+
+                &InnerMarginMin
+                {
+                    margin-top: 15px;
+
+                    @include media-breakpoint-up(md)
+                    {
+                        margin-bottom: 30px;
+                    }
+                    @include media-breakpoint-up(lg)
+                    {
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer
+    {
+        font-size: .9rem;
+
+        padding-bottom: 30px;
+
+        text-align: center;
+
+        @include media-breakpoint-up(lg)
+        {
+            font-size: 1rem;
+
+            padding-bottom: 0;
+        }
+
+        &Message
+        {
+            &Love
+            {
+                display: inline-block;
+
+                width: 2rem;
+
+                vertical-align: bottom;
+
+                background-size: contain;
+
+                @include hidden;
+                @extend .icon__loveDark;
+            }
+
+            &Coffee
+            {
+                display: inline-block;
+
+                width: 2rem;
+
+                vertical-align: bottom;
+
+                background-size: contain;
+
+                @include hidden;
+                @extend .icon__coffeeDark;
+            }
+        }
+    }
+
+    &__close
+    {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        border-radius: 30px;
+        background-color: $text-color;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .3);
+
+        @include media-breakpoint-up(lg)
+        {
+            bottom: 30px;
+        }
+        @include media-breakpoint-up(xl)
+        {
+            bottom: 60px;
+        }
+
+        &Button
+        {
+            display: block;
+
+            width: 60px;
+            height: 60px;
+
+            background-size: 50%;
+
+            @extend .icon__close;
+        }
+    }
+}

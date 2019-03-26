@@ -15,18 +15,18 @@
     &__main
     {
         @extend .Page__main;
-
-        &Inner
-        {
-            @include make-container;
-        }
     }
 }
 
 .Hi
 {
     @extend .Page__block;
-    @include make-row;
+    @include make-container;
+
+    &__inner
+    {
+        @include make-row;
+    }
 
     &__content
     {
@@ -85,7 +85,12 @@
 .What
 {
     @extend .Page__block;
-    @include make-row;
+    @include make-container;
+
+    &__inner
+    {
+        @include make-row;
+    }
 
     &__title
     {
@@ -132,6 +137,10 @@
             order: 1;
 
             @extend .Page__blockVisual;
+            @include media-breakpoint-up(md)
+            {
+                margin-bottom: 30px;
+            }
 
             &Img
             {
@@ -174,10 +183,13 @@
 
 .Skillset
 {
-    flex-direction: column;
-
     @extend .Page__block;
-    @include make-row;
+    @include make-container;
+
+    &__inner
+    {
+        flex-direction: column;
+    }
 
     &__title
     {
@@ -194,8 +206,18 @@
     {
         @include media-breakpoint-up(md)
         {
+            margin-right: 60px;
+            margin-left: 60px;
+        }
+        @include media-breakpoint-up(lg)
+        {
             margin-right: 120px;
             margin-left: 120px;
+        }
+        @include media-breakpoint-up(xl)
+        {
+            margin-right: 240px;
+            margin-left: 240px;
         }
 
         &Item
@@ -371,7 +393,12 @@
     flex-wrap: nowrap !important;
 
     @extend .Page__block;
-    @include make-row;
+    @include make-container;
+
+    &__inner
+    {
+        flex-direction: column;
+    }
 
     &__title
     {
@@ -388,8 +415,18 @@
     {
         @include media-breakpoint-up(md)
         {
+            margin-right: 60px;
+            margin-left: 60px;
+        }
+        @include media-breakpoint-up(lg)
+        {
             margin-right: 120px;
             margin-left: 120px;
+        }
+        @include media-breakpoint-up(xl)
+        {
+            margin-right: 240px;
+            margin-left: 240px;
         }
 
         &Item

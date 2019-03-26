@@ -1,0 +1,13 @@
+{
+    "locale": "ja",
+    "title": "実績 - Astlanox",
+    "name": "Works",
+    "description": "DescriptionHere",
+    "enLink": "works/",
+    "jaLink": "ja/works/",
+    "hrefLang": "en-US",
+    "hrefLangLink": "works/",
+    "langLink": "ja/works/",
+
+    "more": "詳細"
+}

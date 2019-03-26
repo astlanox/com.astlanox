@@ -1,16 +1,23 @@
--var title = home.title
--var description = home.description
+-var page = home
+include module/_locale
 doctype html
-html(lang=home.locale)
+html(lang=locale)
     include module/_head
     body
         include module/_header
-        main.Main.Home
-            .Main__header
-                .Home__title
-                    h1 Home
-            .Main__content
-                .Main__contentInner
-                    
+        main.Home
+            .Home__header
+                .Home__headerTitle
+                    h1 #{home.home}
+            .Home__main
+                .Mv
+                    .Mv__inner
+                        .Mv__innerContent
+                            h2.Mv__innerContentTitle(data-aos='fade-right', data-aos-delay='300') #{home.mvTitle}
+                            p.Mv__innerContentJob(data-aos='fade-right', data-aos-anchor-placement="top-bottom", data-aos-delay='400') #{home.mvJob}
+                            p.Mv__innerContentWorks
+                                a.Mv__innerContentWorksLink(href=`${meta.rootDir + works.langLink}` data-aos='fade-up', data-aos-anchor-placement="top-bottom", data-aos-delay='500') #{home.mvWorks}
+                        .Mv__innerVisual
+                            img.Mv__innerVisualImg(data-aos='zoom-in', data-aos-delay='300')(src=`${meta.rootDir}asset/images/home_mv.png`)
         include module/_footer
         include module/_script

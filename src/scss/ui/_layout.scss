@@ -1,24 +1,33 @@
 @mixin container()
 {
     width: auto !important;
+    margin-right: 5px !important;
+    margin-left: 5px !important;
 
     @include media-breakpoint-up(sm)
     {
-        max-width: 640px !important;
-        margin-right: auto !important;
-        margin-left: auto !important;
+        // max-width: 640px !important;
+        // margin-right: 100px !important;
+        // margin-left: 100px !important;
     }
     @include media-breakpoint-up(md)
     {
-        max-width: 940px !important;
+        // max-width: 940px !important;
+        margin-right: 60px !important;
+        margin-left: 60px !important;
     }
     @include media-breakpoint-up(lg)
     {
-        max-width: 1124px !important;
+        // max-width: 1124px !important;
+        margin-right: 120px !important;
+        margin-left: 120px !important;
     }
     @include media-breakpoint-up(xl)
     {
         max-width: 1420px !important;
+
+        @include margin-auto;
+        @include margin-auto;
     }
 }
 
@@ -32,10 +41,10 @@
     }
     @include media-breakpoint-up(lg)
     {
-        margin-top: -202px;
+        margin-top: -192px;
     }
     @include media-breakpoint-up(xl)
     {
-        margin-top: -262px;
+        margin-top: -252px;
     }
 }

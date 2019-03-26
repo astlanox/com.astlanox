@@ -1,4 +1,15 @@
 script.
     AOS.init({
-        duration: 1500,
+        duration: 1000,
         });
+    if (!(/Android|webOS|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(navigator.userAgent))) {
+
+        $(function() {
+            $.scrollify({
+                section: ".Pagescroll",
+                standardScrollElements: ".modal",
+                updateHash: false,
+            });
+        });
+
+    }

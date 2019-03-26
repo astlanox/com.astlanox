@@ -1,6 +1,12 @@
 {
     "locale": "ja",
-    "baseDir": "",
-    "title": "タイトル2",
-    "description": "説明"
+    "title": "Astlanox",
+    "name": "Home",
+    "description": "DescriptionHere",
+    "enLink": "",
+    "jaLink": "ja/",
+    "hrefLang": "en-US",
+    "hrefLangLink": "",
+    "langLink": "ja/"
+
 }

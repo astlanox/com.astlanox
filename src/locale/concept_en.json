@@ -1,0 +1,20 @@
+{
+    "locale": "en",
+    "title": "Concept - Astlanox",
+    "name": "Concept",
+    "description": "DescriptionHere",
+    "enLink": "concept/",
+    "jaLink": "ja/concept",
+    "hrefLang": "ja-JA",
+    "hrefLangLink": "ja/concept",
+    "langLink": "concept/",
+
+    "oneTitle": "To be simple is difficult.",
+    "oneText": "UI and content in Web and App should be as simple as possible. Because it’s the best way to convey user of the creator’s intention. But it’s not an easy thing. We need to think hard about what you really want to do with the App and for best UI.",
+
+    "twoTitle": "Designs have reasons.",
+    "twoText": "Why the color, the shape, and the arrangement? It should not be designed so that you can not answer the reason. There is a reason for every design.",
+
+    "thirdTitle": "For who?",
+    "thirdText": "All Web and Apps should be for the user. There is no point in becoming a maker's self-satisfaction even if it was a beautiful design or rich content. Web and App design is only to help users understand. So we always need to think about what is the most important things? I always keep this in mind,UX is more important than UI."
+}

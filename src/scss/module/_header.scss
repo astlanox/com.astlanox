@@ -64,7 +64,7 @@
     {
         display: block;
 
-        width: 158px;
+        width: 118px;
         height: 40px;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -75,12 +75,26 @@
         background-size: contain;
 
         @include hidden;
+        @include media-breakpoint-up(md)
+        {
+            width: 140px;
+            height: 72px;
+            padding-top: 36px;
+            padding-bottom: 36px;
+        }
         @include media-breakpoint-up(lg)
         {
+            width: 160px;
+            height: 72px;
+            padding-top: 36px;
+            padding-bottom: 36px;
+        }
+        @include media-breakpoint-up(xl)
+        {
             width: 190px;
-            height: 62px;
-            padding-top: 41px;
-            padding-bottom: 41px;
+            height: 72px;
+            padding-top: 36px;
+            padding-bottom: 36px;
         }
     }
 }
@@ -189,7 +203,7 @@
             &:before
             {
                 position: absolute;
-                z-index: 1001;
+                z-index: 101;
                 top: -10px;
                 left: 0;
 
@@ -208,7 +222,7 @@
             &:after
             {
                 position: absolute;
-                z-index: 1001;
+                z-index: 101;
                 top: -10px;
                 top: 10px;
                 left: 0;
@@ -329,7 +343,7 @@
             @include media-breakpoint-up(md)
             {
                 font-size: 1.2rem;
-                font-weight: 200;
+                font-weight: 300;
 
                 display: inline-block;
 

@@ -1,7 +1,7 @@
 header.Header(data-aos='fade-down',data-aos-duration="1000")
     .Header__inner
         .Logo
-            a.Logo__link(href=meta.rootDir) Astlanox
+            a.Logo__link(href=`${meta.rootDir + home.langLink}`) Astlanox
         nav.Nav
             input.Nav__toggle(type="checkbox")
             .Nav__hamburger
@@ -12,21 +12,21 @@ header.Header(data-aos='fade-down',data-aos-duration="1000")
                         .HeaderNav
                             ul.HeaderNav__list
                                 li.HeaderNav__listItem.HeaderNav__listItem--home
-                                    a.HeaderNav__listItemLink(href=meta.rootDir) Home
+                                    a.HeaderNav__listItemLink(href=`${meta.rootDir + home.langLink}`) #{header.home}
                                 li.HeaderNav__listItem
-                                    a.HeaderNav__listItemLink(href=`${meta.rootDir}/about`) About
+                                    a.HeaderNav__listItemLink(href=`${meta.rootDir + about.langLink}`) #{header.about}
                                 li.HeaderNav__listItem
-                                    a.HeaderNav__listItemLink(href=`${meta.rootDir}/concept`) Concept
+                                    a.HeaderNav__listItemLink(href=`${meta.rootDir + concept.langLink}`) #{header.concept}
                                 li.HeaderNav__listItem
-                                    a.HeaderNav__listItemLink(href=`${meta.rootDir}/works`) Works
+                                    a.HeaderNav__listItemLink(href=`${meta.rootDir + works.langLink}`) #{header.works}
                                 li.HeaderNav__listItem.HeaderNav__listItem--contact
-                                    a.HeaderNav__listItemLink.HeaderNav__listItemLink--contact(href=`${meta.rootDir}/contact`) Contact
+                                    a.HeaderNav__listItemLink.HeaderNav__listItemLink--contact(href=`${meta.rootDir + contact.langLink}`) #{header.contact}
                         .SelectLang
                             ul.SelectLang__list
                                 li.SelectLang__listItem
-                                    a.SelectLang__listItemLink(class=`u-${locale}`)(href=enLink) EN
+                                    a.SelectLang__listItemLink(class=`u-${locale}`)(href=`${meta.rootDir + enLink}`) EN
                                 li.SelectLang__listItem
-                                    a.SelectLang__listItemLink(class=`j-${locale}`)(href=jaLink) JA
+                                    a.SelectLang__listItemLink(class=`j-${locale}`)(href=`${meta.rootDir + jaLink}`) JA
                     .Nav__menuInnerBg
                         .HeaderBg
-                            img(src=`${meta.rootDir}/asset/images/header_bg_white.png`)
+                            img(src=`${meta.rootDir}asset/images/header_bg_white.png`)

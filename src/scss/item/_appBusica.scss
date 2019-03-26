@@ -1,0 +1,222 @@
+.AppBusica
+{
+    &__information
+    {
+        @extend .WorksItem__mainBlock;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitle--information;
+        }
+    }
+
+    &__informationSkill,
+    &__informationSoftware
+    {
+        @extend .WorksItem__mainBlockSub;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitleSub--information;
+        }
+
+        &List
+        {
+            &Item
+            {
+                font-size: .8rem;
+
+                display: inline-block;
+
+                margin-right: 20px;
+                margin-bottom: 20px;
+                padding: .8rem 1.5rem .8rem 3.2rem;
+
+                border-radius: 2.6rem;
+                background-position: 1.2rem 50%;
+                background-size: 1.4rem;
+                box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .15);
+
+                @include media-breakpoint-up(lg)
+                {
+                    font-size: 1rem;
+
+                    padding: 1rem 3rem 1rem 5rem;
+
+                    background-position: 2rem 50%;
+                    background-size: 1.8rem;
+                }
+
+                &--ui
+                {
+                    @extend .icon__ui;
+                }
+
+                &--ux
+                {
+                    @extend .icon__ux;
+                }
+
+                &--illustrator
+                {
+                    @extend .icon__illustrator;
+                }
+
+                &--adobeXd
+                {
+                    @extend .icon__adobeXd;
+                }
+
+                &--sketch
+                {
+                    @extend .icon__sketch;
+                }
+            }
+        }
+    }
+
+
+    &__informationDetail
+    {
+        @extend .WorksItem__mainBlockSub;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitleSub--detail;
+        }
+
+        &List
+        {
+            &Item
+            {
+                &Title
+                {
+                    font-size: .8rem;
+                    font-weight: 400;
+
+                    margin-bottom: 20px;
+                }
+
+                &Text
+                {
+                    font-weight: 200;
+
+                    margin-bottom: 40px;
+
+                    @include media-breakpoint-up(lg)
+                    {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__about
+    {
+        @extend .WorksItem__mainBlock;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitle;
+        }
+
+        &Text
+        {
+            @extend .WorksItem__mainBlockText;
+            @include media-breakpoint-up(lg)
+            {
+                columns: 2;
+                column-gap: 4rem;
+            }
+        }
+    }
+
+    &__identity,
+    &__ux,
+    &__ui
+    {
+        @extend .WorksItem__mainBlock;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitle;
+        }
+
+        &Text
+        {
+            @extend .WorksItem__mainBlockText;
+        }
+    }
+
+    &__ux,
+    &__ui
+    {
+        &Visual
+        {
+            @extend .WorksItem__mainBlockVisual--full;
+            @extend .WorksItem__mainBlockInnerMargin;
+        }
+    }
+
+    &__logo,
+    &__color,
+    &__typography,
+    &__screen,
+    &__icon
+    {
+        @extend .WorksItem__mainBlockSub;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitleSub;
+        }
+
+        &Text
+        {
+            @extend .WorksItem__mainBlockText;
+        }
+    }
+
+    &__screenMain,
+    &__screenContact,
+    &__screenMessage
+    {
+        @extend .WorksItem__mainBlockSubMin;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitleSubMin;
+        }
+
+        &Text
+        {
+            @extend .WorksItem__mainBlockText;
+        }
+
+        &Visual
+        {
+            @extend .WorksItem__mainBlockInnerMargin;
+        }
+    }
+
+    &__dark
+    {
+        @extend .WorksItem__mainBlockSub;
+
+        &Title
+        {
+            @extend .WorksItem__mainBlockTitleSub;
+        }
+
+        &Text
+        {
+            @extend .WorksItem__mainBlockText;
+        }
+
+        &Visual
+        {
+            @extend .WorksItem__mainBlockInnerMargin;
+        }
+    }
+}

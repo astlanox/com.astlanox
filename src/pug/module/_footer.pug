@@ -3,9 +3,9 @@ footer.Footer
         .FooterSelectLang
             ul.FooterSelectLang__list
                 li.FooterSelectLang__listItem
-                    a(class=`u-${locale}`)(href=enLink) EN
+                    a(class=`u-${locale}`)(href=`${meta.rootDir + enLink}`) EN
                 li.FooterSelectLang__listItem
-                    a(class=`j-${locale}`)(href=jaLink) JA
+                    a(class=`j-${locale}`)(href=`${meta.rootDir + jaLink}`) JA
     .Footer__copyright
         p.Message
             |Made with 

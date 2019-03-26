@@ -1,0 +1,96 @@
+.Concept
+{
+    @extend .Page;
+
+    &__header
+    {
+        @extend .Page__header;
+
+        &Title
+        {
+            @extend .Page__headerTitle;
+        }
+    }
+
+    &__main
+    {
+        @extend .Page__main;
+    }
+}
+
+.ConceptOne,
+.ConceptSecond,
+.ConceptThird
+{
+    @extend .Page__block;
+    @include make-container;
+
+    &__inner
+    {
+        @include make-row;
+    }
+
+    &__content
+    {
+        order: 2;
+
+        @include make-col(12);
+        @include media-breakpoint-up(md)
+        {
+            align-self: center;
+
+            @include make-col(6);
+        }
+
+        &Title
+        {
+            @extend .Page__blockTitle;
+        }
+
+        &Text
+        {
+            @extend .Page__blockText;
+        }
+    }
+
+    &__visual
+    {
+        order: 1;
+
+        @include make-col(12);
+        @extend .Page__blockVisual;
+        @include media-breakpoint-up(md)
+        {
+            display: flex;
+            align-items: center;
+
+            @include make-col(6);
+        }
+
+        &Img
+        {
+            max-width: 190px;
+
+            @include margin-auto;
+        }
+    }
+}
+
+.ConceptSecond
+{
+    &__content
+    {
+        @include media-breakpoint-up(md)
+        {
+            order: 1;
+        }
+    }
+
+    &__visual
+    {
+        @include media-breakpoint-up(md)
+        {
+            order: 2;
+        }
+    }
+}

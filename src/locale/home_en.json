@@ -1,6 +1,18 @@
 {
     "locale": "en",
-    "baseDir": "",
     "title": "Astlanox",
-    "description": "DescriptionHere"
+    "name": "Home",
+    "description": "DescriptionHere",
+    "enLink": "",
+    "jaLink": "ja/",
+    "hrefLang": "ja-JA",
+    "hrefLangLink": "ja/",
+    "langLink": "",
+
+    "home": "Home",
+
+    "mvTitle": "To be Simple is Difficult",
+    "mvJob": "UI/UX Designer and Developer",
+    "mvWorks": "Works",
+    "mvWorksLink": "/works"
 }

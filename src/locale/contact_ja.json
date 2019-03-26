@@ -1,0 +1,12 @@
+{
+    "locale": "ja",
+    "title": "お問い合わせ - Astlanox",
+    "name": "Contact",
+    "description": "DescriptionHere",
+    "enLink": "contact/",
+    "jaLink": "ja/contact/",
+    "hrefLang": "en-US",
+    "hrefLangLink": "contact/",
+    "langLink": "ja/contact/"
+
+}

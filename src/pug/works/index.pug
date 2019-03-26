@@ -1,0 +1,26 @@
+-var page = works
+include ../module/_locale
+doctype html
+html(lang=locale)
+    include ../module/_head
+    body
+        include ../module/_header
+        main.Works
+            .Works__header
+                h1.Works__headerTitle(data-aos='fade-up',data-aos-delay="500") #{works.name}
+                .Scroll(data-aos='zoom-in', data-aos-delay="1500",data-aos-anchor-placement="top-bottom")
+            .Works__main
+                .Archive
+                    ul.Archive__list
+                        li.Archive__listItem(data-aos='fade-up')
+                            .Archive__listItemContent
+                                h2.Archive__listItemContentTitle #{appBusica.name}
+                                p.Archive__listItemContentType
+                                    span.Archive__listItemContentTypeText #{appBusica.type}
+                                p.Archive__listItemContentDescription #{appBusica.description}
+                                p.Archive__listItemContentMore
+                                    a.Archive__listItemContentMoreLink(href=`${meta.rootDir + appBusica.langLink}`) #{works.more}
+                            .Archive__listItemVisual
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/app/busica/busica_thumnail.png`)
+        include ../module/_footer
+        include ../module/_script

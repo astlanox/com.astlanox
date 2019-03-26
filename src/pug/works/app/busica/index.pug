@@ -1,0 +1,105 @@
+-var page = appBusica
+include ../../../module/_locale
+doctype html
+html(lang=locale)
+    include ../../../module/_head
+    body
+        main.WorksItem
+            .WorksItem__header
+                h1.WorksItem__headerTitle #{appBusica.name}
+                img.WorksItem__headerVisual(src=`${meta.rootDir}asset/images/app/busica/busica_mv.png`)
+            .WorksItem__main
+                section.AppBusica__information
+                    h2.AppBusica__informationTitle #{appBusica.information}
+                    section.AppBusica__informationSkill
+                        h3.AppBusica__informationSkillTitle #{appBusica.skill}
+                        ol.AppBusica__informationSkillList
+                            li.AppBusica__informationSkillListItem.AppBusica__informationSkillListItem--ui UI Design
+                            li.AppBusica__informationSkillListItem.AppBusica__informationSkillListItem--ux UX Design
+                    section.AppBusica__informationSoftware
+                        h3.AppBusica__informationSoftwareTitle #{appBusica.software}
+                        ol.AppBusica__informationSoftwareList
+                            li.AppBusica__informationSoftwareListItem.AppBusica__informationSoftwareListItem--illustrator Illustrator
+                            li.AppBusica__informationSoftwareListItem.AppBusica__informationSoftwareListItem--adobeXd Adobe XD
+                            li.AppBusica__informationSoftwareListItem.AppBusica__informationSoftwareListItem--sketch Sketch
+                    section.AppBusica__informationDetail
+                        h3.AppBusica__informationDetailTitle #{appBusica.detail}
+                        dl.AppBusica__informationDetailList
+                            .AppBusica__informationDetailListItem
+                                dt.AppBusica__informationDetailListItemTitle #{appBusica.client}
+                                dd.AppBusica__informationDetailListItemText #{appBusica.clientText}
+                            .AppBusica__informationDetailListItem
+                                dt.AppBusica__informationDetailListItemTitle #{appBusica.launch}
+                                dd.AppBusica__informationDetailListItemText #{appBusica.launchText}
+                            .AppBusica__informationDetailListItem
+                                dt.AppBusica__informationDetailListItemTitle #{appBusica.type}
+                                dd.AppBusica__informationDetailListItemText #{appBusica.typeText}
+                            .AppBusica__informationDetailListItem
+                                dt.AppBusica__informationDetailListItemTitle #{appBusica.charge}
+                                dd.AppBusica__informationDetailListItemText #{appBusica.chargeText}
+                section.AppBusica__about
+                    h2.AppBusica__aboutTitle #{appBusica.about}
+                    p.AppBusica__aboutText #{appBusica.aboutText}
+                section.AppBusica__identity
+                    h2.AppBusica__identityTitle #{appBusica.identity}
+                    p.AppBusica__identityText #{appBusica.identityText}
+                    section.AppBusica__logo
+                        h3.AppBusica__logoTitle #{appBusica.logo}
+                        p.AppBusica__logoVisual
+                            img(src=`${meta.rootDir}asset/images/app/busica/busica_img_logo.png`)
+                    section.AppBusica__color
+                        h3.AppBusica__colorTitle #{appBusica.color}
+                        p.AppBusica__colorVisual
+                            img(src=`${meta.rootDir}asset/images/app/busica/busica_img_color.png`)
+                    section.AppBusica__typography
+                        h3.AppBusica__typographyTitle #{appBusica.typography}
+                        p.AppBusica__typographyVisual
+                            img(src=`${meta.rootDir}asset/images/app/busica/busica_img_typography.png`)
+                section.AppBusica__ux
+                    h2.AppBusica__uxTitle #{appBusica.ux}
+                    p.AppBusica__uxText #{appBusica.uxText}
+                    p.AppBusica__uxVisual
+                        img(src=`${meta.rootDir}asset/images/app/busica/busica_img_ux.png`)
+                section.AppBusica__ui
+                    h2.AppBusica__uiTitle #{appBusica.ui}
+                    p.AppBusica__uiText #{appBusica.uiText}
+                    p.AppBusica__uiVisual
+                        img(src=`${meta.rootDir}asset/images/app/busica/busica_img_ui.png`)
+                    section.AppBusica__screen
+                        h3.AppBusica__screenTitle #{appBusica.screen}
+                        section.AppBusica__screenMain
+                            h4.AppBusica__screenMainTitle #{appBusica.main}
+                            p.AppBusica__screenMainText #{appBusica.mainText}
+                            p.AppBusica__screenMainVisual
+                                img(src=`${meta.rootDir}asset/images/app/busica/busica_img_screen_01.png`)
+                        section.AppBusica__screenContact
+                            h4.AppBusica__screenContactTitle #{appBusica.contact}
+                            p.AppBusica__screenContactText #{appBusica.contactText}
+                            p.AppBusica__screenContactVisual
+                                img(src=`${meta.rootDir}asset/images/app/busica/busica_img_screen_02.png`)
+                        section.AppBusica__screenMessage
+                            h4.AppBusica__screenMessageTitle #{appBusica.message}
+                            p.AppBusica__screenMessageText #{appBusica.messageText}
+                            p.AppBusica__screenMessageVisual
+                                img(src=`${meta.rootDir}asset/images/app/busica/busica_img_screen_03.png`)
+                    section.AppBusica__dark
+                        h3.AppBusica__darkTitle #{appBusica.dark}
+                        p.AppBusica__darkText #{appBusica.darkText}
+                        p.AppBusica__darkVisual
+                            img(src=`${meta.rootDir}asset/images/app/busica/busica_img_dark.png`)
+                    section.AppBusica__icon
+                        h3.AppBusica__iconTitle #{appBusica.icon}
+                        p.AppBusica__iconText #{appBusica.iconText}
+                        p.AppBusica__iconVisual
+                            img(src=`${meta.rootDir}asset/images/app/busica/busica_img_icon.png`)
+            .WorksItem__footer
+                p.WorksItem__footerMessage
+                    |Made with 
+                    span.WorksItem__footerMessageLove love
+                    |  and 
+                    span.WorksItem__footerMessageCoffee coffee
+                    |  by Astlanox.
+            .WorksItem__close
+                a(href=`${meta.rootDir + works.langLink}`)
+                    span.WorksItem__closeButton
+        include ../../../module/_script

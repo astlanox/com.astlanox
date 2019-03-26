@@ -1,0 +1,330 @@
+.Works
+{
+    @extend .Page;
+
+    &__header
+    {
+        @extend .Page__header;
+
+        &Title
+        {
+            @extend .Page__headerTitle;
+        }
+    }
+
+    &__main
+    {
+        @extend .Page__main;
+
+        &Inner
+        {
+            @include make-container;
+        }
+    }
+}
+
+// .Archive
+// {
+//     max-width: 1140px;
+
+//     color: $primary-color;
+
+//     @include margin-auto;
+
+//     &__list
+//     {
+//         @include make-container;
+
+//         &Item
+//         {
+//             margin-bottom: 20px;
+
+//             border-radius: 10px;
+
+//             @include make-row;
+//             @include media-breakpoint-up(sm)
+//             {
+//                 margin-bottom: 60px;
+//             }
+
+//             &Content
+//             {
+//                 // display: flex;
+//                 // flex-direction: column;
+//                 order: 2;
+
+//                 // padding: 20px;
+
+//                 background-color: #fff;
+
+//                 @include make-col-ready();
+//                 @include make-col(12);
+//                 @include media-breakpoint-up(md)
+//                 {
+//                     align-self: center;
+
+//                     padding: 60px;
+
+//                     @include make-col(6);
+//                 }
+
+//                 &Title
+//                 {
+//                     order: 2;
+
+//                     @include media-breakpoint-up(md)
+//                     {
+//                         font-size: 2.5rem;
+//                     }
+//                 }
+
+//                 &Type
+//                 {
+//                     order: 1;
+
+//                     margin-bottom: .5rem;
+
+//                     &Text
+//                     {
+//                         font-size: .6rem;
+
+//                         display: inline-block;
+
+//                         padding: .3rem .8rem;
+
+//                         color: $text-color;
+//                         border-radius: 1.2rem;
+//                         background-color: $primary-color;
+//                     }
+//                 }
+
+//                 &Description
+//                 {
+//                     order: 3;
+//                 }
+
+//                 &More
+//                 {
+//                     order: 4;
+
+//                     margin-top: .5rem;
+
+//                     text-align: center;
+
+//                     &Link
+//                     {
+//                         display: inline-block;
+
+//                         padding: .6rem 1.8rem;
+
+//                         border-radius: 2.2rem;
+//                         background-color: $accent-color;
+//                     }
+//                 }
+//             }
+
+//             &Visual
+//             {
+//                 display: flex;
+//                 flex-direction: column;
+//                 order: 1;
+
+//                 border-radius: 10px 10px 0 0;
+//                 background-color: #375793;
+
+//                 @include make-col-ready();
+//                 @include make-col(12);
+//                 @include media-breakpoint-up(md)
+//                 {
+//                     display: flex;
+//                     align-items: flex-end;
+//                     justify-content: center;
+
+//                     border-radius: 10px 0 0 10px;
+
+//                     @include make-col(6);
+//                 }
+
+
+//                 &Img
+//                 {
+//                     display: block;
+
+//                     max-width: 100%;
+//                     // max-width: 380px;
+//                     padding-right: 20px;
+//                     padding-left: 20px;
+
+//                     @include margin-auto;
+//                     @include media-breakpoint-up(md)
+//                     {
+//                         // max-width: 540px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+.Archive
+{
+    color: $primary-color;
+
+    @include margin-auto;
+
+    &__list
+    {
+        &Item
+        {
+            margin-bottom: 20px;
+
+            @include make-row();
+            @include margin-auto;
+            @include media-breakpoint-up(sm)
+            {
+                max-width: 480px;
+                margin-bottom: 60px;
+            }
+            @include media-breakpoint-up(md)
+            {
+                max-width: 1060px;
+                margin-bottom: 60px;
+            }
+            @include media-breakpoint-up(xl)
+            {
+                max-width: 1140px;
+            }
+
+
+            &Content
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                order: 2;
+
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                border-radius: 0 0 10px 10px;
+                background-color: #fff;
+
+                @include make-col-ready();
+                @include media-breakpoint-up(md)
+                {
+                    padding: 60px;
+
+                    border-radius: 0 10px 10px 0;
+
+                    @include make-col(6);
+                }
+
+                &Title
+                {
+                    order: 2;
+
+                    @include media-breakpoint-up(lg)
+                    {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                &Type
+                {
+                    order: 1;
+
+                    margin-bottom: .5rem;
+
+                    &Text
+                    {
+                        font-size: .6rem;
+
+                        display: inline-block;
+
+                        padding: .3rem .8rem;
+
+                        color: $text-color;
+                        border-radius: 1.2rem;
+                        background-color: $primary-color;
+                    }
+                }
+
+                &Description
+                {
+                    order: 3;
+                }
+
+                &More
+                {
+                    order: 4;
+
+                    margin-top: .5rem;
+
+                    text-align: center;
+
+                    &Link
+                    {
+                        display: inline-block;
+
+                        padding: .6rem 2rem;
+
+                        border-radius: 2.2rem;
+                        background-color: $accent-color;
+                    }
+                }
+            }
+
+            &Visual
+            {
+                order: 1;
+
+                border-radius: 10px 10px 0 0;
+                background-color: #375793;
+
+                @include make-col-ready();
+                @include media-breakpoint-up(md)
+                {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    border-radius: 10px 0 0 10px;
+
+                    @include make-col(6);
+                }
+
+                &Img
+                {
+                    width: 100%;
+
+                    @include media-breakpoint-up(md)
+                    {
+                        max-width: 430px;
+                    }
+                }
+            }
+        }
+
+        &Item:nth-child(odd)
+        {
+             > .Archive__listItemContent
+            {
+                @include media-breakpoint-up(md)
+                {
+                    order: 1;
+
+                    border-radius: 10px 0 0 10px;
+                }
+            }
+
+             > .Archive__listItemVisual
+            {
+                @include media-breakpoint-up(md)
+                {
+                    order: 2;
+
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+        }
+    }
+}

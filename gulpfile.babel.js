@@ -2,8 +2,10 @@
 
 import gulp from 'gulp';
 import pug from 'gulp-pug';
+import srcset from 'gulp-sugar-srcset';
 import readConfig from 'read-config';
 import sass from 'gulp-sass';
+import imgRetina from 'gulp-img-retina';
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
 import rename from 'gulp-rename';
@@ -41,9 +43,16 @@ const pugTask = (lang) => {
 
     let locals = {
         'meta': readConfig(`${SRC}/locale/meta` + `.json`),
-        // 'header': readConfig(`${SRC}/locale/header_` + lang + `.json`),
+        'header': readConfig(`${SRC}/locale/header_` + lang + `.json`),
         'home': readConfig(`${SRC}/locale/home_` + lang + `.json`),
-        'about': readConfig(`${SRC}/locale/about_` + lang + `.json`)
+        'about': readConfig(`${SRC}/locale/about_` + lang + `.json`),
+        'concept': readConfig(`${SRC}/locale/concept_` + lang + `.json`),
+        'works': readConfig(`${SRC}/locale/works_` + lang + `.json`),
+        'contact': readConfig(`${SRC}/locale/contact_` + lang + `.json`),
+        'appBusica': readConfig(`${SRC}/locale/appBusica_` + lang + `.json`),
+        // 'webBusica': readConfig(`${SRC}/locale/webBusica_` + lang + `.json`),
+        // 'webAstlanox': readConfig(`${SRC}/locale/webAstlanox_` + lang + `.json`),
+        // 'appInfuse': readConfig(`${SRC}/locale/appInfuse_` + lang + `.json`)
     }
     return gulp.src(
             ['./src/pug/**/*.pug', '!./src/pug/**/_*.pug']
@@ -57,6 +66,7 @@ const pugTask = (lang) => {
             locals: locals,
             pretty: true
         }))
+        .pipe(srcset())
         .pipe(gulp.dest(`${destDir}`));
 }
 
@@ -78,7 +88,7 @@ gulp.task("css", function (done) {
                 errorHandler: notify.onError("Error: <%= error.message %>")
             })
         )
-        .pipe(base64())
+        .pipe(imgRetina())
         .pipe(
             sass({
                 outputStyle: "expanded"
@@ -89,6 +99,12 @@ gulp.task("css", function (done) {
                 browsers: ["last 3 versions", "ie >= 9", "Android >= 4", "ios_saf >= 8"]
             })
         )
+        .pipe(base64({
+            baseDir: 'public',
+            extensions: ['svg', 'png', 'gif', /\.jpg#datauri$/i],
+            maxImageSize: 8 * 1024,
+            debug: true
+        }))
         .pipe(gulp.dest(paths.public.css))
         .pipe(cleanCSS())
         .pipe(
