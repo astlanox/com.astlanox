@@ -27,7 +27,6 @@
     }
     @include media-breakpoint-up(xl)
     {
-        // max-width: 1720px;
         margin-top: 120px;
         margin-bottom: 120px;
 
@@ -72,6 +71,90 @@
     {
         padding-top: 20px;
         padding-bottom: 60px;
+
+        &Link
+        {
+            margin-top: 60px;
+
+            @include media-breakpoint-up(md)
+            {
+                margin-top: 90px;
+            }
+            @include media-breakpoint-up(lg)
+            {
+                margin-top: 120px;
+            }
+
+            &List
+            {
+                text-align: center;
+
+                &Item
+                {
+                    display: inline-block;
+
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+
+                    @include media-breakpoint-up(lg)
+                    {
+                        margin-right: 30px;
+                        margin-bottom: 0;
+                    }
+
+                    &:last-child
+                    {
+                        margin-right: 0;
+                    }
+
+                    &Href
+                    {
+                        font-size: .8rem;
+
+                        display: inline-block;
+
+                        padding: 1rem 2rem 1rem 3.4rem;
+
+                        border-radius: 2.6rem;
+                        background-color: $accent-color;
+
+                        @include media-breakpoint-up(lg)
+                        {
+                            font-size: 1rem;
+
+                            padding: 1.2rem 2rem 1.2rem 5.4rem;
+                        }
+
+                        &--visit
+                        {
+                            background-position: .8rem 50%;
+                            background-size: 1.8rem;
+
+                            @extend .icon__visit;
+                            @include media-breakpoint-up(lg)
+                            {
+                                background-position: 1.2rem 50%;
+                                background-size: 3rem;
+                            }
+                        }
+
+                        &--github
+                        {
+                            background-color: $primary-color;
+                            background-position: .8rem 50%;
+                            background-size: 1.8rem;
+
+                            @extend .icon__github;
+                            @include media-breakpoint-up(lg)
+                            {
+                                background-position: 1.2rem 50%;
+                                background-size: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         &Block
         {
@@ -141,6 +224,7 @@
                     font-size: 3rem;
                 }
 
+                &--link,
                 &--information
                 {
                     width: 100%;

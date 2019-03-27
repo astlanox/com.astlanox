@@ -504,7 +504,7 @@ img {
   background-position: 50%;
 }
 
-.icon__illustrator, .Software__listItem--illustrator, .AppBusica__informationSkillListItem--illustrator, .AppBusica__informationSoftwareListItem--illustrator {
+.icon__illustrator, .Software__listItem--illustrator, .AppBusica__informationSkillListItem--illustrator, .AppBusica__informationSoftwareListItem--illustrator, .WebAstlanox__informationSkillListItem--illustrator, .WebAstlanox__informationSoftwareListItem--illustrator {
   background: url(data:image/png;base64,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);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -534,7 +534,7 @@ img {
   background-position: 50%;
 }
 
-.icon__vsCode, .Software__listItem--vsCode {
+.icon__vsCode, .Software__listItem--vsCode, .WebAstlanox__informationSkillListItem--vsCode, .WebAstlanox__informationSoftwareListItem--vsCode {
   background: url("/asset/images/icon/icon_vsCode.png");
   background-repeat: no-repeat;
   background-position: 50%;
@@ -570,13 +570,13 @@ img {
   background-position: 50%;
 }
 
-.icon__html, .Skillset__listItemTitleIcon--html {
+.icon__html, .Skillset__listItemTitleIcon--html, .WebAstlanox__informationSkillListItem--html, .WebAstlanox__informationSoftwareListItem--html {
   background: url(data:image/png;base64,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);
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
-.icon__css, .Skillset__listItemTitleIcon--css {
+.icon__css, .Skillset__listItemTitleIcon--css, .WebAstlanox__informationSkillListItem--css, .WebAstlanox__informationSoftwareListItem--css {
   background: url(data:image/png;base64,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);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -588,13 +588,13 @@ img {
   background-position: 50%;
 }
 
-.icon__sass, .Skillset__listItemTitleIcon--sass {
+.icon__sass, .Skillset__listItemTitleIcon--sass, .WebAstlanox__informationSkillListItem--sass, .WebAstlanox__informationSoftwareListItem--sass {
   background: url("/asset/images/icon/icon_sass.png");
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
-.icon__pug, .Skillset__listItemTitleIcon--pug {
+.icon__pug, .Skillset__listItemTitleIcon--pug, .WebAstlanox__informationSkillListItem--pug, .WebAstlanox__informationSoftwareListItem--pug {
   background: url("/asset/images/icon/icon_pug.png");
   background-repeat: no-repeat;
   background-position: 50%;
@@ -602,6 +602,18 @@ img {
 
 .icon__php, .Skillset__listItemTitleIcon--php {
   background: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.icon__github, .WorksItem__mainLinkListItemHref--github, .WebAstlanox__linkListItemHref--github {
+  background: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.icon__visit, .WorksItem__mainLinkListItemHref--visit, .WebAstlanox__linkListItemHref--visit {
+  background: url(data:image/png;base64,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);
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -2587,38 +2599,115 @@ img {
   padding-bottom: 60px;
 }
 
-.WorksItem__mainBlock, .AppBusica__information, .AppBusica__about, .AppBusica__identity, .AppBusica__ux, .AppBusica__ui {
-  margin-bottom: 60px;
-}
-
-@media (min-width: 769px) {
-  .WorksItem__mainBlock, .AppBusica__information, .AppBusica__about, .AppBusica__identity, .AppBusica__ux, .AppBusica__ui {
-    margin-bottom: 90px;
-  }
-}
-
-@media (min-width: 1366px) {
-  .WorksItem__mainBlock, .AppBusica__information, .AppBusica__about, .AppBusica__identity, .AppBusica__ux, .AppBusica__ui {
-    margin-bottom: 120px;
-  }
-}
-
-.WorksItem__mainBlock:last-child, .AppBusica__information:last-child, .AppBusica__about:last-child, .AppBusica__identity:last-child, .AppBusica__ux:last-child, .AppBusica__ui:last-child {
-  margin-bottom: 0;
-}
-
-.WorksItem__mainBlockSub, .AppBusica__informationSkill, .AppBusica__informationSoftware, .AppBusica__informationDetail, .AppBusica__logo, .AppBusica__color, .AppBusica__typography, .AppBusica__screen, .AppBusica__icon, .AppBusica__dark {
+.WorksItem__mainLink, .WebAstlanox__link {
   margin-top: 60px;
 }
 
 @media (min-width: 769px) {
-  .WorksItem__mainBlockSub, .AppBusica__informationSkill, .AppBusica__informationSoftware, .AppBusica__informationDetail, .AppBusica__logo, .AppBusica__color, .AppBusica__typography, .AppBusica__screen, .AppBusica__icon, .AppBusica__dark {
+  .WorksItem__mainLink, .WebAstlanox__link {
     margin-top: 90px;
   }
 }
 
 @media (min-width: 1366px) {
-  .WorksItem__mainBlockSub, .AppBusica__informationSkill, .AppBusica__informationSoftware, .AppBusica__informationDetail, .AppBusica__logo, .AppBusica__color, .AppBusica__typography, .AppBusica__screen, .AppBusica__icon, .AppBusica__dark {
+  .WorksItem__mainLink, .WebAstlanox__link {
+    margin-top: 120px;
+  }
+}
+
+.WorksItem__mainLinkList, .WebAstlanox__linkList {
+  text-align: center;
+}
+
+.WorksItem__mainLinkListItem, .WebAstlanox__linkListItem {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1366px) {
+  .WorksItem__mainLinkListItem, .WebAstlanox__linkListItem {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.WorksItem__mainLinkListItem:last-child, .WebAstlanox__linkListItem:last-child {
+  margin-right: 0;
+}
+
+.WorksItem__mainLinkListItemHref, .WebAstlanox__linkListItemHref {
+  font-size: .8rem;
+  display: inline-block;
+  padding: 1rem 2rem 1rem 3.4rem;
+  border-radius: 2.6rem;
+  background-color: #a53f3f;
+}
+
+@media (min-width: 1366px) {
+  .WorksItem__mainLinkListItemHref, .WebAstlanox__linkListItemHref {
+    font-size: 1rem;
+    padding: 1.2rem 2rem 1.2rem 5.4rem;
+  }
+}
+
+.WorksItem__mainLinkListItemHref--visit, .WebAstlanox__linkListItemHref--visit {
+  background-position: .8rem 50%;
+  background-size: 1.8rem;
+}
+
+@media (min-width: 1366px) {
+  .WorksItem__mainLinkListItemHref--visit, .WebAstlanox__linkListItemHref--visit {
+    background-position: 1.2rem 50%;
+    background-size: 3rem;
+  }
+}
+
+.WorksItem__mainLinkListItemHref--github, .WebAstlanox__linkListItemHref--github {
+  background-color: #202020;
+  background-position: .8rem 50%;
+  background-size: 1.8rem;
+}
+
+@media (min-width: 1366px) {
+  .WorksItem__mainLinkListItemHref--github, .WebAstlanox__linkListItemHref--github {
+    background-position: 1.2rem 50%;
+    background-size: 3rem;
+  }
+}
+
+.WorksItem__mainBlock, .AppBusica__information, .AppBusica__about, .AppBusica__identity, .AppBusica__ux, .AppBusica__ui, .WebAstlanox__information, .WebAstlanox__about, .WebAstlanox__concept, .WebAstlanox__responsible, .WebAstlanox__illustration, .WebAstlanox__multiple, .WebAstlanox__technology {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 769px) {
+  .WorksItem__mainBlock, .AppBusica__information, .AppBusica__about, .AppBusica__identity, .AppBusica__ux, .AppBusica__ui, .WebAstlanox__information, .WebAstlanox__about, .WebAstlanox__concept, .WebAstlanox__responsible, .WebAstlanox__illustration, .WebAstlanox__multiple, .WebAstlanox__technology {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .WorksItem__mainBlock, .AppBusica__information, .AppBusica__about, .AppBusica__identity, .AppBusica__ux, .AppBusica__ui, .WebAstlanox__information, .WebAstlanox__about, .WebAstlanox__concept, .WebAstlanox__responsible, .WebAstlanox__illustration, .WebAstlanox__multiple, .WebAstlanox__technology {
+    margin-bottom: 120px;
+  }
+}
+
+.WorksItem__mainBlock:last-child, .AppBusica__information:last-child, .AppBusica__about:last-child, .AppBusica__identity:last-child, .AppBusica__ux:last-child, .AppBusica__ui:last-child, .WebAstlanox__information:last-child, .WebAstlanox__about:last-child, .WebAstlanox__concept:last-child, .WebAstlanox__responsible:last-child, .WebAstlanox__illustration:last-child, .WebAstlanox__multiple:last-child, .WebAstlanox__technology:last-child {
+  margin-bottom: 0;
+}
+
+.WorksItem__mainBlockSub, .AppBusica__informationSkill, .AppBusica__informationSoftware, .AppBusica__informationDetail, .AppBusica__logo, .AppBusica__color, .AppBusica__typography, .AppBusica__screen, .AppBusica__icon, .AppBusica__dark, .WebAstlanox__informationSkill, .WebAstlanox__informationSoftware, .WebAstlanox__informationDetail, .WebAstlanox__sass, .WebAstlanox__bem {
+  margin-top: 60px;
+}
+
+@media (min-width: 769px) {
+  .WorksItem__mainBlockSub, .AppBusica__informationSkill, .AppBusica__informationSoftware, .AppBusica__informationDetail, .AppBusica__logo, .AppBusica__color, .AppBusica__typography, .AppBusica__screen, .AppBusica__icon, .AppBusica__dark, .WebAstlanox__informationSkill, .WebAstlanox__informationSoftware, .WebAstlanox__informationDetail, .WebAstlanox__sass, .WebAstlanox__bem {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .WorksItem__mainBlockSub, .AppBusica__informationSkill, .AppBusica__informationSoftware, .AppBusica__informationDetail, .AppBusica__logo, .AppBusica__color, .AppBusica__typography, .AppBusica__screen, .AppBusica__icon, .AppBusica__dark, .WebAstlanox__informationSkill, .WebAstlanox__informationSoftware, .WebAstlanox__informationDetail, .WebAstlanox__sass, .WebAstlanox__bem {
     margin-top: 120px;
   }
 }
@@ -2639,7 +2728,7 @@ img {
   }
 }
 
-.WorksItem__mainBlockTitle, .AppBusica__aboutTitle, .AppBusica__identityTitle, .AppBusica__uxTitle, .AppBusica__uiTitle {
+.WorksItem__mainBlockTitle, .AppBusica__aboutTitle, .AppBusica__identityTitle, .AppBusica__uxTitle, .AppBusica__uiTitle, .WebAstlanox__aboutTitle, .WebAstlanox__conceptTitle, .WebAstlanox__responsibleTitle, .WebAstlanox__illustrationTitle, .WebAstlanox__multipleTitle, .WebAstlanox__technologyTitle, .WebAstlanox__visualTitle, .WebAstlanox__animationTitle {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 30px;
@@ -2647,7 +2736,7 @@ img {
 }
 
 @media (min-width: 1366px) {
-  .WorksItem__mainBlockTitle, .AppBusica__aboutTitle, .AppBusica__identityTitle, .AppBusica__uxTitle, .AppBusica__uiTitle {
+  .WorksItem__mainBlockTitle, .AppBusica__aboutTitle, .AppBusica__identityTitle, .AppBusica__uxTitle, .AppBusica__uiTitle, .WebAstlanox__aboutTitle, .WebAstlanox__conceptTitle, .WebAstlanox__responsibleTitle, .WebAstlanox__illustrationTitle, .WebAstlanox__multipleTitle, .WebAstlanox__technologyTitle, .WebAstlanox__visualTitle, .WebAstlanox__animationTitle {
     font-size: 2.5rem;
     margin-bottom: 60px;
     text-align: left;
@@ -2655,12 +2744,12 @@ img {
 }
 
 @media (min-width: 1840px) {
-  .WorksItem__mainBlockTitle, .AppBusica__aboutTitle, .AppBusica__identityTitle, .AppBusica__uxTitle, .AppBusica__uiTitle {
+  .WorksItem__mainBlockTitle, .AppBusica__aboutTitle, .AppBusica__identityTitle, .AppBusica__uxTitle, .AppBusica__uiTitle, .WebAstlanox__aboutTitle, .WebAstlanox__conceptTitle, .WebAstlanox__responsibleTitle, .WebAstlanox__illustrationTitle, .WebAstlanox__multipleTitle, .WebAstlanox__technologyTitle, .WebAstlanox__visualTitle, .WebAstlanox__animationTitle {
     font-size: 3rem;
   }
 }
 
-.WorksItem__mainBlockTitle--information, .AppBusica__informationTitle {
+.WorksItem__mainBlockTitle--link, .WebAstlanox__linkTitle, .WorksItem__mainBlockTitle--information, .AppBusica__informationTitle, .WebAstlanox__informationTitle {
   width: 100%;
   height: 1px;
   overflow: hidden;
@@ -2668,37 +2757,37 @@ img {
   text-indent: 100%;
 }
 
-.WorksItem__mainBlockTitleSub, .AppBusica__logoTitle, .AppBusica__colorTitle, .AppBusica__typographyTitle, .AppBusica__screenTitle, .AppBusica__iconTitle, .AppBusica__darkTitle {
+.WorksItem__mainBlockTitleSub, .AppBusica__logoTitle, .AppBusica__colorTitle, .AppBusica__typographyTitle, .AppBusica__screenTitle, .AppBusica__iconTitle, .AppBusica__darkTitle, .WebAstlanox__sassTitle, .WebAstlanox__bemTitle {
   font-weight: 400;
   margin-top: 60px;
   margin-bottom: 30px;
 }
 
 @media (min-width: 1366px) {
-  .WorksItem__mainBlockTitleSub, .AppBusica__logoTitle, .AppBusica__colorTitle, .AppBusica__typographyTitle, .AppBusica__screenTitle, .AppBusica__iconTitle, .AppBusica__darkTitle {
+  .WorksItem__mainBlockTitleSub, .AppBusica__logoTitle, .AppBusica__colorTitle, .AppBusica__typographyTitle, .AppBusica__screenTitle, .AppBusica__iconTitle, .AppBusica__darkTitle, .WebAstlanox__sassTitle, .WebAstlanox__bemTitle {
     font-size: 1.5rem;
     margin-bottom: 60px;
   }
 }
 
 @media (min-width: 1840px) {
-  .WorksItem__mainBlockTitleSub, .AppBusica__logoTitle, .AppBusica__colorTitle, .AppBusica__typographyTitle, .AppBusica__screenTitle, .AppBusica__iconTitle, .AppBusica__darkTitle {
+  .WorksItem__mainBlockTitleSub, .AppBusica__logoTitle, .AppBusica__colorTitle, .AppBusica__typographyTitle, .AppBusica__screenTitle, .AppBusica__iconTitle, .AppBusica__darkTitle, .WebAstlanox__sassTitle, .WebAstlanox__bemTitle {
     font-size: 1.8rem;
   }
 }
 
-.WorksItem__mainBlockTitleSub--information, .AppBusica__informationSkillTitle, .AppBusica__informationSoftwareTitle {
+.WorksItem__mainBlockTitleSub--information, .AppBusica__informationSkillTitle, .AppBusica__informationSoftwareTitle, .WebAstlanox__informationSkillTitle, .WebAstlanox__informationSoftwareTitle {
   font-size: 1rem;
   margin-bottom: 30px;
 }
 
 @media (min-width: 1366px) {
-  .WorksItem__mainBlockTitleSub--information, .AppBusica__informationSkillTitle, .AppBusica__informationSoftwareTitle {
+  .WorksItem__mainBlockTitleSub--information, .AppBusica__informationSkillTitle, .AppBusica__informationSoftwareTitle, .WebAstlanox__informationSkillTitle, .WebAstlanox__informationSoftwareTitle {
     font-size: 1.2rem;
   }
 }
 
-.WorksItem__mainBlockTitleSub--detail, .AppBusica__informationDetailTitle {
+.WorksItem__mainBlockTitleSub--detail, .AppBusica__informationDetailTitle, .WebAstlanox__informationDetailTitle {
   width: 100%;
   height: 1px;
   overflow: hidden;
@@ -2718,41 +2807,41 @@ img {
   }
 }
 
-.WorksItem__mainBlockText, .AppBusica__aboutText, .AppBusica__identityText, .AppBusica__uxText, .AppBusica__uiText, .AppBusica__logoText, .AppBusica__colorText, .AppBusica__typographyText, .AppBusica__screenText, .AppBusica__iconText, .AppBusica__screenMainText, .AppBusica__screenContactText, .AppBusica__screenMessageText, .AppBusica__darkText {
+.WorksItem__mainBlockText, .AppBusica__aboutText, .AppBusica__identityText, .AppBusica__uxText, .AppBusica__uiText, .AppBusica__logoText, .AppBusica__colorText, .AppBusica__typographyText, .AppBusica__screenText, .AppBusica__iconText, .AppBusica__screenMainText, .AppBusica__screenContactText, .AppBusica__screenMessageText, .AppBusica__darkText, .WebAstlanox__aboutText, .WebAstlanox__conceptText, .WebAstlanox__responsibleText, .WebAstlanox__illustrationText, .WebAstlanox__multipleText, .WebAstlanox__technologyText, .WebAstlanox__visualText, .WebAstlanox__animationText, .WebAstlanox__sassText, .WebAstlanox__bemText {
   font-weight: 300;
 }
 
-.WorksItem__mainBlockVisual--full, .AppBusica__uxVisual, .AppBusica__uiVisual {
+.WorksItem__mainBlockVisual--full, .AppBusica__uxVisual, .AppBusica__uiVisual, .WebAstlanox__visualImg, .WebAstlanox__animationImg, .WebAstlanox__sassVisual, .WebAstlanox__bemVisual {
   margin-right: -20px;
   margin-left: -20px;
 }
 
 @media (min-width: 480px) {
-  .WorksItem__mainBlockVisual--full, .AppBusica__uxVisual, .AppBusica__uiVisual {
+  .WorksItem__mainBlockVisual--full, .AppBusica__uxVisual, .AppBusica__uiVisual, .WebAstlanox__visualImg, .WebAstlanox__animationImg, .WebAstlanox__sassVisual, .WebAstlanox__bemVisual {
     margin-right: -60px;
     margin-left: -60px;
   }
 }
 
 @media (min-width: 1366px) {
-  .WorksItem__mainBlockVisual--full, .AppBusica__uxVisual, .AppBusica__uiVisual {
+  .WorksItem__mainBlockVisual--full, .AppBusica__uxVisual, .AppBusica__uiVisual, .WebAstlanox__visualImg, .WebAstlanox__animationImg, .WebAstlanox__sassVisual, .WebAstlanox__bemVisual {
     margin-right: -120px;
     margin-left: -120px;
   }
 }
 
-.WorksItem__mainBlockInnerMargin, .AppBusica__uxVisual, .AppBusica__uiVisual, .AppBusica__logoVisual, .AppBusica__colorVisual, .AppBusica__typographyVisual, .AppBusica__screenVisual, .AppBusica__iconVisual, .AppBusica__screenMainVisual, .AppBusica__screenContactVisual, .AppBusica__screenMessageVisual, .AppBusica__darkVisual {
+.WorksItem__mainBlockInnerMargin, .AppBusica__uxVisual, .AppBusica__uiVisual, .AppBusica__logoVisual, .AppBusica__colorVisual, .AppBusica__typographyVisual, .AppBusica__screenVisual, .AppBusica__iconVisual, .AppBusica__screenMainVisual, .AppBusica__screenContactVisual, .AppBusica__screenMessageVisual, .AppBusica__darkVisual, .WebAstlanox__conceptVisual, .WebAstlanox__responsibleVisual, .WebAstlanox__illustrationVisual, .WebAstlanox__multipleVisual, .WebAstlanox__technologyVisual, .WebAstlanox__visualImg, .WebAstlanox__animationImg, .WebAstlanox__sassVisual, .WebAstlanox__bemVisual {
   margin-top: 30px;
 }
 
 @media (min-width: 769px) {
-  .WorksItem__mainBlockInnerMargin, .AppBusica__uxVisual, .AppBusica__uiVisual, .AppBusica__logoVisual, .AppBusica__colorVisual, .AppBusica__typographyVisual, .AppBusica__screenVisual, .AppBusica__iconVisual, .AppBusica__screenMainVisual, .AppBusica__screenContactVisual, .AppBusica__screenMessageVisual, .AppBusica__darkVisual {
+  .WorksItem__mainBlockInnerMargin, .AppBusica__uxVisual, .AppBusica__uiVisual, .AppBusica__logoVisual, .AppBusica__colorVisual, .AppBusica__typographyVisual, .AppBusica__screenVisual, .AppBusica__iconVisual, .AppBusica__screenMainVisual, .AppBusica__screenContactVisual, .AppBusica__screenMessageVisual, .AppBusica__darkVisual, .WebAstlanox__conceptVisual, .WebAstlanox__responsibleVisual, .WebAstlanox__illustrationVisual, .WebAstlanox__multipleVisual, .WebAstlanox__technologyVisual, .WebAstlanox__visualImg, .WebAstlanox__animationImg, .WebAstlanox__sassVisual, .WebAstlanox__bemVisual {
     margin-top: 60px;
   }
 }
 
 @media (min-width: 1366px) {
-  .WorksItem__mainBlockInnerMargin, .AppBusica__uxVisual, .AppBusica__uiVisual, .AppBusica__logoVisual, .AppBusica__colorVisual, .AppBusica__typographyVisual, .AppBusica__screenVisual, .AppBusica__iconVisual, .AppBusica__screenMainVisual, .AppBusica__screenContactVisual, .AppBusica__screenMessageVisual, .AppBusica__darkVisual {
+  .WorksItem__mainBlockInnerMargin, .AppBusica__uxVisual, .AppBusica__uiVisual, .AppBusica__logoVisual, .AppBusica__colorVisual, .AppBusica__typographyVisual, .AppBusica__screenVisual, .AppBusica__iconVisual, .AppBusica__screenMainVisual, .AppBusica__screenContactVisual, .AppBusica__screenMessageVisual, .AppBusica__darkVisual, .WebAstlanox__conceptVisual, .WebAstlanox__responsibleVisual, .WebAstlanox__illustrationVisual, .WebAstlanox__multipleVisual, .WebAstlanox__technologyVisual, .WebAstlanox__visualImg, .WebAstlanox__animationImg, .WebAstlanox__sassVisual, .WebAstlanox__bemVisual {
     margin-top: 60px;
   }
 }
@@ -2879,6 +2968,54 @@ img {
 
 @media (min-width: 1366px) {
   .AppBusica__aboutText {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
+  }
+}
+
+.WebAstlanox__informationSkillListItem, .WebAstlanox__informationSoftwareListItem {
+  font-size: .8rem;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: .8rem 1.5rem .8rem 3.2rem;
+  border-radius: 2.6rem;
+  background-position: 1.2rem 50%;
+  background-size: 1.4rem;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 1366px) {
+  .WebAstlanox__informationSkillListItem, .WebAstlanox__informationSoftwareListItem {
+    font-size: 1rem;
+    padding: 1rem 3rem 1rem 5rem;
+    background-position: 2rem 50%;
+    background-size: 1.8rem;
+  }
+}
+
+.WebAstlanox__informationDetailListItemTitle {
+  font-size: .8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.WebAstlanox__informationDetailListItemText {
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1366px) {
+  .WebAstlanox__informationDetailListItemText {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .WebAstlanox__aboutText {
     -webkit-columns: 2;
             columns: 2;
     -webkit-column-gap: 4rem;

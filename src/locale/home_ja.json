@@ -7,6 +7,12 @@
     "jaLink": "ja/",
     "hrefLang": "en-US",
     "hrefLangLink": "",
-    "langLink": "ja/"
+    "langLink": "ja/",
 
+    "home": "Home",
+
+    "mvTitle": "シンプルである事は難しい",
+    "mvJob": "UI/UXデザイナー、デベロッパー",
+    "mvWorks": "実績",
+    "mvWorksLink": "ja/works/"
 }

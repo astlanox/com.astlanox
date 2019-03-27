@@ -1,4 +1,8 @@
 {
+    "link": "Link",
+    "github": "View on GitHub",
+    "visit": "Visit the Website",
+
     "information": "Information",
     "skill": "Skill",
     "software": "Software",
@@ -36,8 +40,9 @@
 
     "animation": "Animation",
 
+    "multiple": "Multiple Language",
+
     "technology": "Technology",
     "sass": "Sass",
     "bem": "BEM"
-
 }
