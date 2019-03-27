@@ -1,4 +1,8 @@
 {
+    "link": "リンク",
+    "github": "GitHubで見る",
+    "visit": "Webサイトを見る",
+
     "information": "情報",
     "skill": "スキル",
     "software": "ソフトウェア",
@@ -7,5 +11,38 @@
     "client": "クライアント",
     "launch": "ローンチ",
     "type": "タイプ",
-    "charge": "担当"
+    "charge": "担当",
+
+    "about": "概要",
+
+    "identity": "アイデンティティ",
+    "logo": "ロゴ",
+    "color": "カラーガイドライン",
+    "typography": "タイポグラフィーガイドライン",
+
+    "ux": "UXデザイン",
+
+    "ui": "UIデザイン",
+
+    "dark": "ダークテーマ",
+
+    "icon": "アイコン",
+
+    "concept": "コンセプト",
+
+    "responsible": "レスポンシブルデザイン",
+
+    "illustration": "イラスト",
+
+    "visual": "ビジュアル",
+
+    "autoReply": "自動返信",
+
+    "animation": "アニメーション",
+
+    "multiple": "多言語",
+
+    "technology": "技術",
+    "sass": "Sass",
+    "bem": "BEM"
 }

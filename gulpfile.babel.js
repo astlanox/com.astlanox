@@ -98,7 +98,7 @@ gulp.task("css", function (done) {
         .pipe(base64({
             baseDir: 'public',
             extensions: ['svg', 'png', 'gif', /\.jpg#datauri$/i],
-            maxImageSize: 8 * 1024
+            // maxImageSize: 8 * 1024
         }))
         .pipe(gulp.dest(paths.public.css))
         .pipe(cleanCSS())

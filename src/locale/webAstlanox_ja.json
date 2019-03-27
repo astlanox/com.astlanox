@@ -1,25 +1,27 @@
 {
-    "locale": "en",
+    "locale": "ja",
     "title": "Astlanox - Astlanox",
     "name": "Astlanox",
-    "description": "This is portfolio of my portfolio Web site.",
+    "description": "AstlanoxのWebサイトのポートフォリオです。",
     "enLink": "works/web/astlanox/",
     "jaLink": "ja/works/web/astlanox/",
-    "hrefLang": "ja-JA",
-    "hrefLangLink": "ja/works/web/astlanox/",
-    "langLink": "works/web/astlanox/",
+    "hrefLang": "en-US",
+    "hrefLangLink": "works/web/astlanox/",
+    "langLink": "ja/works/web/astlanox/",
 
-    "information": "Information",
-    "skill": "Skill",
-    "software": "Software",
-
-    "detail": "Detail",
-    "client": "Client",
     "clientText": "-",
-    "launch": "Launch",
-    "launchText": "-",
-    "type": "Type",
-    "typeText": "App Design",
-    "charge": "Charge",
-    "chargeText": "Plannign, UI design, UX design, Icon design"
+    "launchText": "2019/03/18",
+    "typeText": "Webデザイン",
+    "chargeText": "企画、Webデザイン、グラフィックデザイン、ライティング",
+
+    "aboutText": "私のWebサイト（当サイト）のポートフォリオです。見た目やユーザー体験だけでなく、運用のしやすさまで考えてこだわって作り上げました。運用のしやすさや視認性を考慮してSassとPugを採用しました。また、英語と日本語の２つの言語に対応しています。",
+
+    "conceptText": "私自身の名前からも連想できる「宇宙」をコンセプトとして設定しました。ロゴや色使いからAstlanoxという名前を思い出していただけるように意識してデザインしています。",
+
+    "responsibleText": "PC、タブレット、スマートフォン間でデバイスによる情報や印象に差異が出ないように、レスポンシブルデザインで作成されています。",
+
+    "multipleText": "英語と日本語の両言語に対応しています。",
+
+    "sassText": "通常のCSSよりも管理・運用がしやすいSassで記述されています。",
+    "bemText": "公開後の運用と可読性を考慮してBem記法を採用しました。"
 }

@@ -16,9 +16,37 @@ head
     script(src="https://unpkg.com/aos@next/dist/aos.js")
     script(src='https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js')
     script(src='https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js')
+
     link(rel='apple-touch-icon', sizes='180x180', href=`${meta.rootDir}favicon/apple-touch-icon.png`)
     link(rel='icon', type='image/png', sizes='32x32', href=`${meta.rootDir}favicon/favicon-32x32.png`)
     link(rel='icon', type='image/png', sizes='16x16', href=`${meta.rootDir}favicon/favicon-16x16.png`)
     link(rel='manifest', href=`${meta.rootDir}favicon/site.webmanifest`)
     link(rel='shortcut icon', href=`${meta.rootDir}favicon/favicon.ico`)
     meta(name='msapplication-config', content=`${meta.rootDir}favicon/browserconfig.xml`)
+    meta(property='og:title', content=`${title}`)
+    meta(property='og:type', content='website')
+    meta(property='og:url', content=`${meta.rootDir}`)
+    meta(property='og:image', content=`${meta.rootDir}asset/images/ogp.png`)
+    meta(property='og:description', content=`${description}`)
+    meta(property='og:site_name', content='Astlanox')
+    meta(property='fb:app_id', content='2232903580305202')
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@astlanox')
+    meta(name='twitter:creator', content='@astlanox')
+    meta(property='og:site_name', content='Astlanox')
+
+    script.
+        (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NGV867F');

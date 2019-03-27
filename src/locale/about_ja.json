@@ -2,27 +2,27 @@
     "locale": "ja",
     "title": "自己紹介 - Astlanox",
     "name": "About",
-    "description": "DescriptionHere",
+    "description": "自己紹介のページです。",
     "enLink": "about/",
     "jaLink": "ja/about/",
     "hrefLang": "en-US",
     "hrefLangLink": "about/",
     "langLink": "ja/about/",
 
-    "hiTitle": "Hi! I am Astlanox.",
-    "hiText": "Welcome to my Web site! I am a UI/UX designer and Developer based in Tokyo. I have experience with App design and Web creation and also developing them. and love the design, engineering, and my job!",
+    "hiTitle": "こんにちは！ Astlanoxです",
+    "hiText": "私のWebサイトへようこそ！私は東京都内でUI/UXデザイナーとデベロッパーをしています。主にAppデザインとWeb制作の経験があり、デザインをする事と開発をする事、そして自分の仕事が大好きです！",
 
-    "whatTitle": "What I do?",
+    "whatTitle": "何をしているのか？",
 
-    "whatDesignerTitle": "UI/UX Designer",
-    "whatDesignerText": "I love the design! I love everything about design, include seeing, searching and creating. I am happy when I found a beautiful design that I like. When I create one myself, I consider both beauty and usability first.",
+    "whatDesignerTitle": "UI/UXデザイナー",
+    "whatDesignerText": "デザインが大好きです！デザインを見ることも、探すことも、自分で作ることも、デザインに関わる全ての事が好きです。自分好みの美しいデザインに出会った時は嬉しくなります。自分でデザインを作る際には美しさとユーザービリティの両立を第一に考えています。",
 
-    "whatDeveloperTitle": "Developer",
-    "whatDeveloperText": "I became interested in development when I learned HTML and CSS in a class in junior high school. The reason for starting it was the Web, so there were many opportunities to deal with WordPress, and the first language I learned was PHP. Currently, I am studying iOS application development and backend, and I aim to be a Develoner (Designer + Developer).",
+    "whatDeveloperTitle": "デベロッパー",
+    "whatDeveloperText": "中学生時代にHTML、CSSを授業で習ったことをきっかけに開発に興味を持つようになりました。きっかけがWebだったのでWordPressを扱う機会が多く、始めて習得した言語はPHPでした。現在では、iOSアプリ開発やバックエンドの勉強をしていて、”開発もイケるデザイナー”を目指しています。",
 
-    "whatGamerTitle": "Gamer",
-    "whatGamerText": "I like playing the game. I play various games such as FPS, TPS, RPG, racing, and simulator. When you find my id in game, just say “hi!”. And also teabagging me!",
+    "whatGamerTitle": "ゲーマー",
+    "whatGamerText": "ゲームも好きです。FPS、TPS、RPG、レーシング、シミュレーター等、ジャンルにかかわらず色々なゲームをプレイしています。特によくプレイするタイトルはR6SとBFです。もしもゲーム内でIDを見かけた際は”Hi.”と言っていただければ嬉しいです。FPSでの屈伸も大歓迎です！",
 
-    "skillsetTitle": "Skillset",
-    "softwareTitle": "Software"
+    "skillsetTitle": "スキルセット",
+    "softwareTitle": "ソフトウェア"
 }
