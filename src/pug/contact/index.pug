@@ -10,5 +10,15 @@ html(lang=locale)
                 h1.Contact__headerTitle #{contact.name}
                 p hi@astlanox.com
             .Contact__main
+            .Contact__footer
+                ol.Breadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.Breadcrumb__item
+                        a.Breadcrumb__itemLink.Breadcrumb__itemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.Breadcrumb__itemLinkText.Breadcrumb__itemLinkText--home Home
+                    span.Breadcrumb__item.Breadcrumb__item--right ›
+                    li.Breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.Breadcrumb__itemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + contact.langLink}`)
+                            span.Breadcrumb__itemLinkText(itemprop='name') #{contact.name}
+                        meta(itemprop='position', content='1')
         include ../module/_footer
         include ../module/_script

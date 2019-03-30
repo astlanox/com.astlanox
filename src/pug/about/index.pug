@@ -38,7 +38,7 @@ html(lang=locale)
                         section.What__gamer
                             .What__gamerContent
                                 h3.What__gamerContentTitle(data-aos='zoom-in') #{about.whatGamerTitle}
-                                p.What__gamerContentText(data-aos='fade-up') #{about.whatDeveloperText}
+                                p.What__gamerContentText(data-aos='fade-up') #{about.whatGamerText}
                             .What__gamerVisual
                                 p.What__gamerVisualImg(data-aos='zoom-in')
                                     img(src=`${meta.rootDir}asset/images/about_icon_gamer.png`)
@@ -123,5 +123,15 @@ html(lang=locale)
                         li.Software__listItem.Software__listItem--slack(data-aos='fade-up') Slack
                         li.Software__listItem.Software__listItem--discord(data-aos='fade-up') Discord
                         li.Software__listItem.Software__listItem--skype(data-aos='fade-up') Skype
+            .About__footer
+                ol.Breadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.Breadcrumb__item
+                        a.Breadcrumb__itemLink.Breadcrumb__itemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.Breadcrumb__itemLinkText.Breadcrumb__itemLinkText--home Home
+                    span.Breadcrumb__item.Breadcrumb__item--right ›
+                    li.Breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.Breadcrumb__itemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + about.langLink}`)
+                            span.Breadcrumb__itemLinkText(itemprop='name') #{about.name}
+                        meta(itemprop='position', content='1')
         include ../module/_footer
         include ../module/_script

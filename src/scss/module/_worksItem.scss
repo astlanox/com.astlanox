@@ -387,6 +387,74 @@
                 @extend .icon__coffeeDark;
             }
         }
+
+        &Breadcrumb
+        {
+            font-size: .8rem;
+            font-weight: 200;
+            line-height: 1;
+
+            margin-bottom: 60px;
+
+            text-align: left;
+
+            color: $primary-color;
+
+            @include media-breakpoint-up(lg)
+            {
+                margin-top: 90px;
+            }
+            @include media-breakpoint-up(xl)
+            {
+                margin-top: 120px;
+            }
+
+            &Item
+            {
+                display: inline-block;
+
+                &--right
+                {
+                    width: .8rem;
+                    margin-right: 10px;
+                    margin-left: 10px;
+
+                    vertical-align: bottom;
+
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    background-size: contain;
+
+                    @extend .icon__rightDark;
+                    @include hidden;
+                }
+
+                &Link
+                {
+                    &Text
+                    {
+                        color: $primary-color;
+
+                        &--home
+                        {
+                            display: inline-block;
+
+                            width: .8rem;
+                            height: .8rem;
+
+                            vertical-align: bottom;
+
+                            background-repeat: no-repeat;
+                            background-position: 50%;
+                            background-size: contain;
+
+                            @include hidden;
+                            @extend .icon__homeDark;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__close

@@ -175,7 +175,6 @@
 
     &__concept,
     &__responsible,
-    &__illustration,
     &__multiple,
     &__technology
     {
@@ -200,6 +199,8 @@
     &__visual,
     &__animation
     {
+        @extend .WorksItem__mainBlock;
+
         &Title
         {
             @extend .WorksItem__mainBlockTitle;
@@ -217,6 +218,7 @@
         }
     }
 
+    &__illustration,
     &__sass,
     &__bem
     {

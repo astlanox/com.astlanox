@@ -14,12 +14,31 @@
 
     &__main
     {
+        margin-bottom: 60px;
+
         @extend .Page__main;
+        @include media-breakpoint-up(md)
+        {
+            margin-bottom: 120px;
+        }
+        @include media-breakpoint-up(lg)
+        {
+            margin-bottom: 180px;
+        }
+        @include media-breakpoint-up(xl)
+        {
+            margin-bottom: 260px;
+        }
 
         &Inner
         {
             @include make-container;
         }
+    }
+
+    &__footer
+    {
+        @extend .Page__footer;
     }
 }
 

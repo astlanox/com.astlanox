@@ -4,15 +4,15 @@
 
     @include media-breakpoint-up(md)
     {
-        margin-bottom: 120px;
+        // margin-bottom: 120px;
     }
     @include media-breakpoint-up(lg)
     {
-        margin-bottom: 180px;
+        // margin-bottom: 180px;
     }
     @include media-breakpoint-up(xl)
     {
-        margin-bottom: 260px;
+        // margin-bottom: 260px;
     }
 
     &__header
@@ -103,6 +103,12 @@
         }
     }
 
+    &__footer
+    {
+        @include make-container();
+        @include container;
+    }
+
     &__block
     {
         margin-bottom: 60px;
@@ -120,19 +126,19 @@
             margin-bottom: 180px;
         }
 
-        &:last-child
-        {
-            margin-bottom: 0;
-        }
+        // &:last-child
+        // {
+        //     margin-bottom: 0;
+        // }
 
         &Sub
         {
             margin-bottom: 60px;
 
-            &:last-child
-            {
-                margin-bottom: 0;
-            }
+            // &:last-child
+            // {
+            //     margin-bottom: 0;
+            // }
         }
 
         &Title
@@ -180,6 +186,57 @@
             @include media-breakpoint-up(md)
             {
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.Breadcrumb
+{
+    font-size: .8rem;
+    font-weight: 200;
+    line-height: 1;
+
+    &__item
+    {
+        display: inline-block;
+
+        &--right
+        {
+            width: .8rem;
+            margin-right: 10px;
+            margin-left: 10px;
+
+            vertical-align: bottom;
+
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: contain;
+
+            @extend .icon__right;
+            @include hidden;
+        }
+
+        &Link
+        {
+            &Text
+            {
+                &--home
+                {
+                    display: inline-block;
+
+                    width: .8rem;
+                    height: .8rem;
+
+                    vertical-align: bottom;
+
+                    background-repeat: no-repeat;
+                    background-position: 50%;
+                    background-size: contain;
+
+                    @include hidden;
+                    @extend .icon__home;
+                }
             }
         }
     }

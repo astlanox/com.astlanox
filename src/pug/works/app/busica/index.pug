@@ -93,6 +93,25 @@ html(lang=locale)
                         p.AppBusica__iconVisual
                             img(src=`${meta.rootDir}asset/images/app/busica/busica_img_icon.png`)
             .WorksItem__footer
+                ol.WorksItem__footerBreadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.WorksItem__footerBreadcrumbItem
+                        a.WorksItem__footerBreadcrumbItemLink.WorksItem__footerBreadcrumbItemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText.WorksItem__footerBreadcrumbItemLinkText--home Home
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + works.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{works.name}
+                        meta(itemprop='position', content='1')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + app.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{app.name}
+                        meta(itemprop='position', content='2')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + appBusica.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{appBusica.name}
+                        meta(itemprop='position', content='3')
                 p.WorksItem__footerMessage
                     |Made with 
                     span.WorksItem__footerMessageLove love

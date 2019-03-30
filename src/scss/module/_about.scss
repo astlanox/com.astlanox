@@ -16,6 +16,11 @@
     {
         @extend .Page__main;
     }
+
+    &__footer
+    {
+        @extend .Page__footer;
+    }
 }
 
 .Hi

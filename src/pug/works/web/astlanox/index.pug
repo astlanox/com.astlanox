@@ -56,10 +56,6 @@ html(lang=locale)
                     p.WebAstlanox__responsibleText #{webAstlanox.responsibleText}
                     p.WebAstlanox__responsibleVisual
                         img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_responsible.png`)
-                section.WebAstlanox__illustration
-                    h2.WebAstlanox__illustrationTitle #{worksItem.illustration}
-                    p.WebAstlanox__illustrationVisual
-                        img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_illustration.png`)
                 section.WebAstlanox__visual
                     h2.WebAstlanox__visualTitle #{worksItem.visual}
                     p.WebAstlanox__visualImg
@@ -70,6 +66,10 @@ html(lang=locale)
                         img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_screen_03.png`)
                     p.WebAstlanox__visualImg
                         img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_screen_04.png`)
+                    section.WebAstlanox__illustration
+                        h3.WebAstlanox__illustrationTitle #{worksItem.illustration}
+                        p.WebAstlanox__illustrationVisual
+                            img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_illustration.png`)
                     //- section.WebAstlanox__autoReply
                         h3.WebAstlanox__autoReplyTitle #{worksItem.autoReply}
                 //- section.WebAstlanox__animation
@@ -92,6 +92,25 @@ html(lang=locale)
                         p.WebAstlanox__bemVisual
                             img(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_img_bem.png`)
             .WorksItem__footer
+                ol.WorksItem__footerBreadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.WorksItem__footerBreadcrumbItem
+                        a.WorksItem__footerBreadcrumbItemLink.WorksItem__footerBreadcrumbItemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText.WorksItem__footerBreadcrumbItemLinkText--home Home
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + works.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{works.name}
+                        meta(itemprop='position', content='2')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + web.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{web.name}
+                        meta(itemprop='position', content='3')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + webAstlanox.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{webAstlanox.name}
+                        meta(itemprop='position', content='4')
                 p.WorksItem__footerMessage
                     |Made with 
                     span.WorksItem__footerMessageLove love

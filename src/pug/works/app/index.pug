@@ -1,0 +1,41 @@
+-var page = app
+include ../../module/_locale
+doctype html
+html(lang=locale)
+    include ../../module/_head
+    body
+        include ../../module/_header
+        main.Works
+            .Works__header
+                h1.Works__headerTitle(data-aos='fade-up',data-aos-delay="500") #{app.name}
+                .Scroll(data-aos='zoom-in', data-aos-delay="1500",data-aos-anchor-placement="top-bottom")
+            .Works__main
+                .Archive
+                    ul.Archive__list
+                        li.Archive__listItem(data-aos='fade-up')
+                            .Archive__listItemContent
+                                h2.Archive__listItemContentTitle #{appBusica.name}
+                                p.Archive__listItemContentType
+                                    span.Archive__listItemContentTypeText #{appBusica.typeText}
+                                p.Archive__listItemContentDescription #{appBusica.description}
+                                p.Archive__listItemContentMore
+                                    a.Archive__listItemContentMoreLink(href=`${meta.rootDir + appBusica.langLink}`) #{works.more}
+                            .Archive__listItemVisual
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/app/busica/busica_thumnail.png`)
+            .Works__footer
+                ol.Breadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.Breadcrumb__item
+                        a.Breadcrumb__itemLink.Breadcrumb__itemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.Breadcrumb__itemLinkText.Breadcrumb__itemLinkText--home Home
+                    span.Breadcrumb__item.Breadcrumb__item--right ›
+                    li.Breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.Breadcrumb__itemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + works.langLink}`)
+                            span.Breadcrumb__itemLinkText(itemprop='name') #{works.name}
+                        meta(itemprop='position', content='1')
+                    span.Breadcrumb__item.Breadcrumb__item--right ›
+                    li.Breadcrumb__item(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.Breadcrumb__itemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + app.langLink}`)
+                            span.Breadcrumb__itemLinkText(itemprop='name') #{app.name}
+                        meta(itemprop='position', content='2')
+        include ../../module/_footer
+        include ../../module/_script

@@ -46,6 +46,8 @@ const pugTask = (lang) => {
         'works': readConfig(`${SRC}/locale/works_` + lang + `.json`),
         'worksItem': readConfig(`${SRC}/locale/worksItem_` + lang + `.json`),
         'contact': readConfig(`${SRC}/locale/contact_` + lang + `.json`),
+        'app': readConfig(`${SRC}/locale/app_` + lang + `.json`),
+        'web': readConfig(`${SRC}/locale/web_` + lang + `.json`),
         'appBusica': readConfig(`${SRC}/locale/appBusica_` + lang + `.json`),
         // 'webBusica': readConfig(`${SRC}/locale/webBusica_` + lang + `.json`),
         'webAstlanox': readConfig(`${SRC}/locale/webAstlanox_` + lang + `.json`),
@@ -98,7 +100,7 @@ gulp.task("css", function (done) {
         .pipe(base64({
             baseDir: 'public',
             extensions: ['svg', 'png', 'gif', /\.jpg#datauri$/i],
-            // maxImageSize: 8 * 1024
+            maxImageSize: 8 * 1024
         }))
         .pipe(gulp.dest(paths.public.css))
         .pipe(cleanCSS())
