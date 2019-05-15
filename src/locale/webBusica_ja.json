@@ -1,0 +1,27 @@
+{
+    "locale": "ja",
+    "title": "Busica (コンセプト) - Astlanox",
+    "name": "Busica (コンセプト)",
+    "description": "BusicaのWebサイトのポートフォリオです。",
+    "enLink": "works/web/busica/",
+    "jaLink": "ja/works/web/busica/",
+    "hrefLang": "en",
+    "hrefLangLink": "works/web/busica/",
+    "langLink": "ja/works/web/busica/",
+
+    "clientText": "-",
+    "launchText": "-",
+    "typeText": "Webデザイン",
+    "chargeText": "企画、Webデザイン、グラフィックデザイン、コーディング、ライティング",
+
+    "aboutText": "BusicaのWebサイトのポートフォリオです。見た目やユーザー体験だけでなく、運用のしやすさまで考えてこだわって作り上げました。運用のしやすさや視認性を考慮してSassとPugを採用しました。また、英語と日本語の２つの言語に対応しています。",
+
+    "conceptText": "Busicaアプリのコンセプトでもある、シンプル、フラット、ソフトを意識してデザインしました。",
+
+    "responsibleText": "PC、タブレット、スマートフォン間でデバイスによる情報や印象に差異が出ないように、レスポンシブルデザインで作成されています。",
+
+    "multipleText": "英語と日本語の両言語に対応しています。",
+
+    "sassText": "通常のCSSよりも管理・運用がしやすいSassで記述されています。",
+    "bemText": "公開後の運用と可読性を考慮してBem記法を採用しました。"
+}

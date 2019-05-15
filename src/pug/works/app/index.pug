@@ -7,8 +7,8 @@ html(lang=locale)
         include ../../module/_header
         main.Works
             .Works__header
-                h1.Works__headerTitle(data-aos='fade-up',data-aos-delay="500") #{app.name}
-                .Scroll(data-aos='zoom-in', data-aos-delay="1500",data-aos-anchor-placement="top-bottom")
+                h1.Works__headerTitle(data-aos='fade-up',data-aos-delay="500") App
+                .Scroll(data-aos='zoom-in', data-aos-delay="1000",data-aos-anchor-placement="top-bottom")
             .Works__main
                 .Archive
                     ul.Archive__list
@@ -21,7 +21,7 @@ html(lang=locale)
                                 p.Archive__listItemContentMore
                                     a.Archive__listItemContentMoreLink(href=`${meta.rootDir + appBusica.langLink}`) #{works.more}
                             .Archive__listItemVisual
-                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/app/busica/busica_thumnail.png`)
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/works/app/busica/busica_thumnail.png`)
             .Works__footer
                 ol.Breadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
                     li.Breadcrumb__item

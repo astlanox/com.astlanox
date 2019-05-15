@@ -1,11 +1,11 @@
 {
     "locale": "ja",
     "title": "コンセプト - Astlanox",
-    "name": "Concept",
+    "name": "コンセプト",
     "description": "DescriptionHere",
     "enLink": "concept/",
     "jaLink": "ja/concept/",
-    "hrefLang": "en-US",
+    "hrefLang": "en",
     "hrefLangLink": "concept/",
     "langLink": "ja/concept/",
 

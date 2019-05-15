@@ -44,5 +44,7 @@
 
     "technology": "Technology",
     "sass": "Sass",
-    "bem": "BEM"
+    "bem": "BEM",
+
+    "translate": "Translate"
 }

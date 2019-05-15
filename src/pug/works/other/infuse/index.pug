@@ -1,0 +1,87 @@
+-var page = otherInfuse
+include ../../../module/_locale
+doctype html
+html(lang=locale)
+    include ../../../module/_head
+    body
+        main.WorksItem
+            .WorksItem__header
+                h1.WorksItem__headerTitle #{otherInfuse.name}
+                img.WorksItem__headerVisual(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_mv.png`, data-aos="fade-up", data-aos-anchor-placement="top-bottom")
+            .WorksItem__main
+                section.WorksItemOther__information
+                    h2.WorksItemOther__informationTitle #{worksItem.information}
+                    section.WorksItemOther__informationSkill
+                        h3.WorksItemOther__informationSkillTitle #{worksItem.skill}
+                        ol.WorksItemOther__informationSkillList
+                            li.WorksItemOther__informationSkillListItem.WorksItemOther__informationSkillListItem--translate Translate
+                    section.WorksItemOther__informationSoftware
+                        h3.WorksItemOther__informationSoftwareTitle #{worksItem.software}
+                        ol.WorksItemOther__informationSoftwareList
+                            li.WorksItemOther__informationSoftwareListItem Lokalise
+                    section.WorksItemOther__informationDetail
+                        h3.WorksItemOther__informationDetailTitle #{worksItem.detail}
+                        dl.WorksItemOther__informationDetailList
+                            .WorksItemOther__informationDetailListItem
+                                dt.WorksItemOther__informationDetailListItemTitle #{worksItem.client}
+                                dd.WorksItemOther__informationDetailListItemText #{otherInfuse.clientText}
+                            .WorksItemOther__informationDetailListItem
+                                dt.WorksItemOther__informationDetailListItemTitle #{worksItem.launch}
+                                dd.WorksItemOther__informationDetailListItemText #{otherInfuse.launchText}
+                            .WorksItemOther__informationDetailListItem
+                                dt.WorksItemOther__informationDetailListItemTitle #{worksItem.type}
+                                dd.WorksItemOther__informationDetailListItemText #{otherInfuse.typeText}
+                            .WorksItemOther__informationDetailListItem
+                                dt.WorksItemOther__informationDetailListItemTitle #{worksItem.charge}
+                                dd.WorksItemOther__informationDetailListItemText #{otherInfuse.chargeText}
+                section.WorksItemOther__about
+                    h2.WorksItemOther__aboutTitle #{worksItem.about}
+                    p.WorksItemOther__aboutText #{otherInfuse.aboutText}
+                section.WorksItemOther__translate
+                    h2.WorksItemOther__translateTitle #{worksItem.translate}
+                    section.WorksItemOther__translateScreen
+                        h3.WorksItemOther__translateTitleSub #{otherInfuse.screens}
+                        section
+                            h4.WorksItemOther__translateTitleSubMin #{otherInfuse.main}
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_01.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_10.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_02.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_03.png`)
+                        section
+                            h4.WorksItemOther__translateTitleSubMin #{otherInfuse.introduction}
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_04.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_05.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_06.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_07.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_08.png`)
+                            img(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_img_screen_09.png`)
+            .WorksItem__footer
+                ol.WorksItem__footerBreadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.WorksItem__footerBreadcrumbItem
+                        a.WorksItem__footerBreadcrumbItemLink.WorksItem__footerBreadcrumbItemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText.WorksItem__footerBreadcrumbItemLinkText--home Home
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + works.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{works.name}
+                        meta(itemprop='position', content='1')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + other.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{other.name}
+                        meta(itemprop='position', content='2')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + otherInfuse.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{otherInfuse.name}
+                        meta(itemprop='position', content='3')
+                p.WorksItem__footerMessage
+                    |Made with 
+                    span.WorksItem__footerMessageLove love
+                    |  and 
+                    span.WorksItem__footerMessageCoffee coffee
+                    |  by Astlanox.
+            .WorksItem__close
+                a(href=`${meta.rootDir + works.langLink}`)
+                    span.WorksItem__closeButton
+        include ../../../module/_script

@@ -14,6 +14,7 @@ import browserSync from 'browser-sync';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import watch from 'gulp-watch';
+// import sitemap from 'gulp-sitemap';
 
 const SRC = './src';
 const DEST = './public';
@@ -48,10 +49,12 @@ const pugTask = (lang) => {
         'contact': readConfig(`${SRC}/locale/contact_` + lang + `.json`),
         'app': readConfig(`${SRC}/locale/app_` + lang + `.json`),
         'web': readConfig(`${SRC}/locale/web_` + lang + `.json`),
+        'other': readConfig(`${SRC}/locale/other_` + lang + `.json`),
         'appBusica': readConfig(`${SRC}/locale/appBusica_` + lang + `.json`),
-        // 'webBusica': readConfig(`${SRC}/locale/webBusica_` + lang + `.json`),
+        'webBusica': readConfig(`${SRC}/locale/webBusica_` + lang + `.json`),
         'webAstlanox': readConfig(`${SRC}/locale/webAstlanox_` + lang + `.json`),
-        // 'appInfuse': readConfig(`${SRC}/locale/appInfuse_` + lang + `.json`)
+        'otherInfuse': readConfig(`${SRC}/locale/otherInfuse_` + lang + `.json`),
+        'appCookshot': readConfig(`${SRC}/locale/appCookshot_` + lang + `.json`)
     }
     return gulp.src(
             ['./src/pug/**/*.pug', '!./src/pug/**/_*.pug']
@@ -66,6 +69,9 @@ const pugTask = (lang) => {
             pretty: true
         }))
         .pipe(imgRetina())
+        // .pipe(sitemap({
+        //     siteUrl: 'https://astlanox.com'
+        // }))
         .pipe(gulp.dest(`${destDir}`));
 }
 

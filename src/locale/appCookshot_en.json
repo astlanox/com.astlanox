@@ -1,0 +1,33 @@
+{
+    "locale": "en",
+    "title": "Cookshot (Concept) - Astlanox",
+    "name": "Cookshot (Concept)",
+    "description": "This is portfolio of Cookshot that image post app + cooking app.",
+    "enLink": "works/app/cookshot/",
+    "jaLink": "ja/works/app/cookshot/",
+    "hrefLang": "ja",
+    "hrefLangLink": "ja/works/app/cookshot/",
+    "langLink": "works/app/cookshot/",
+
+    "clientText": "-",
+    "launchText": "-",
+    "typeText": "App Design",
+    "chargeText": "Plannign, UI design, UX design",
+
+    "aboutText": "Cookshot is a completely new SNS combining image posting SNS and cooking recipe app. You can choose the food posted by others from the appearance like the existing image posting SNS, and you can actually create and post it yourself while watching the recipe. Recently, the act of purchasing goods and food for the sake of so-called news is regarded as a problem in the news recently, but the experience of sharing it with the act of making and eating a meal that is a part of daily life By providing it, I hope that it helps to solve those problems.",
+
+    "uxText": "The most important thing in creating an app is UX (user experience). In order to make the app comfortable for the user, we designed it with consideration of what function it is best to provide with what flow. In addition, while displaying the screen on an actual smartphone, it is designed in consideration of appropriate buttons, icons, and font size.",
+
+    "uiText": "I believe that all core features should be included in the first view. Therefore, without having to store navigation with a hamburger icon etc., only the necessary functions are included in each screen.",
+    "screen": "Screen",
+    "main": "Main",
+    "mainText": "The recommended recipes for you and the current recipes etc are displayed in a large image.",
+    "feed": "Feed",
+    "feedText": "The posts of other users that the user is following are displayed.",
+    "search": "Search",
+    "searchText": "You can search by category, tag, and string. You can search for the food you want to cook from the finished product image and the food you want to use.",
+    "account": "Account",
+    "accountText": "You can manage your account, view posted image list, like image list, follow, follower.",
+    "recipe": "Recipe",
+    "recipeText": "It is a post detail screen. You can browse multiple photos, actual recipes, ingredients, etc."
+}

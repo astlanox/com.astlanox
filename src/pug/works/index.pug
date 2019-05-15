@@ -7,11 +7,31 @@ html(lang=locale)
         include ../module/_header
         main.Works
             .Works__header
-                h1.Works__headerTitle(data-aos='fade-up',data-aos-delay="500") #{works.name}
-                .Scroll(data-aos='zoom-in', data-aos-delay="1500",data-aos-anchor-placement="top-bottom")
+                h1.Works__headerTitle(data-aos='fade-up',data-aos-delay="500") Works
+                .Scroll(data-aos='zoom-in', data-aos-delay="1000",data-aos-anchor-placement="top-bottom")
             .Works__main
                 .Archive
                     ul.Archive__list
+                        li.Archive__listItem(data-aos='fade-up')
+                            .Archive__listItemContent
+                                h2.Archive__listItemContentTitle #{appCookshot.name}
+                                p.Archive__listItemContentType
+                                    span.Archive__listItemContentTypeText #{appCookshot.typeText}
+                                p.Archive__listItemContentDescription #{appCookshot.description}
+                                p.Archive__listItemContentMore
+                                    a.Archive__listItemContentMoreLink(href=`${meta.rootDir + appCookshot.langLink}`) #{works.more}
+                            .Archive__listItemVisual
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_thumnail.png`)
+                        li.Archive__listItem(data-aos='fade-up')
+                            .Archive__listItemContent
+                                h2.Archive__listItemContentTitle #{webBusica.name}
+                                p.Archive__listItemContentType
+                                    span.Archive__listItemContentTypeText #{webBusica.typeText}
+                                p.Archive__listItemContentDescription #{webBusica.description}
+                                p.Archive__listItemContentMore
+                                    a.Archive__listItemContentMoreLink(href=`${meta.rootDir + webBusica.langLink}`) #{works.more}
+                            .Archive__listItemVisual
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/works/web/busica/busica_thumnail.png`)
                         li.Archive__listItem(data-aos='fade-up')
                             .Archive__listItemContent
                                 h2.Archive__listItemContentTitle #{webAstlanox.name}
@@ -21,7 +41,7 @@ html(lang=locale)
                                 p.Archive__listItemContentMore
                                     a.Archive__listItemContentMoreLink(href=`${meta.rootDir + webAstlanox.langLink}`) #{works.more}
                             .Archive__listItemVisual
-                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/web/astlanox/astlanox_thumnail.png`)
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/works/web/astlanox/astlanox_thumnail.png`)
                         li.Archive__listItem(data-aos='fade-up')
                             .Archive__listItemContent
                                 h2.Archive__listItemContentTitle #{appBusica.name}
@@ -31,7 +51,17 @@ html(lang=locale)
                                 p.Archive__listItemContentMore
                                     a.Archive__listItemContentMoreLink(href=`${meta.rootDir + appBusica.langLink}`) #{works.more}
                             .Archive__listItemVisual
-                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/app/busica/busica_thumnail.png`)
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/works/app/busica/busica_thumnail.png`)
+                        li.Archive__listItem(data-aos='fade-up')
+                            .Archive__listItemContent
+                                h2.Archive__listItemContentTitle #{otherInfuse.name}
+                                p.Archive__listItemContentType
+                                    span.Archive__listItemContentTypeText #{otherInfuse.typeText}
+                                p.Archive__listItemContentDescription #{otherInfuse.description}
+                                p.Archive__listItemContentMore
+                                    a.Archive__listItemContentMoreLink(href=`${meta.rootDir + otherInfuse.langLink}`) #{works.more}
+                            .Archive__listItemVisual
+                                img.Archive__listItemVisualImg(src=`${meta.rootDir}asset/images/works/other/infuse/infuse_thumnail.png`)
             .Works__footer
                 ol.Breadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
                     li.Breadcrumb__item

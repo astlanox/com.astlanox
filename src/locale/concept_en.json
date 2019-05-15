@@ -5,11 +5,11 @@
     "description": "This is page of my concept about design.",
     "enLink": "concept/",
     "jaLink": "ja/concept",
-    "hrefLang": "ja-JA",
+    "hrefLang": "ja",
     "hrefLangLink": "ja/concept",
     "langLink": "concept/",
 
-    "oneTitle": "To be simple is difficult.",
+    "oneTitle": "Be simple is difficult.",
     "oneText": "UI and content in Web and App should be as simple as possible. Because it’s the best way to convey user of the creator’s intention. But it’s not an easy thing. We need to think hard about what you really want to do with the App and for best UI.",
 
     "twoTitle": "Designs have reasons.",

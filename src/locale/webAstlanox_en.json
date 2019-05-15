@@ -5,14 +5,14 @@
     "description": "This is portfolio of Astlanox's website.",
     "enLink": "works/web/astlanox/",
     "jaLink": "ja/works/web/astlanox/",
-    "hrefLang": "ja-JA",
+    "hrefLang": "ja",
     "hrefLangLink": "ja/works/web/astlanox/",
     "langLink": "works/web/astlanox/",
 
     "clientText": "-",
     "launchText": "2019/03/18",
     "typeText": "Web Design",
-    "chargeText": "Plannign, Web Design, Graphic Design, Writing",
+    "chargeText": "Plannign, Web Design, Graphic Design, Coding, Writing",
 
     "aboutText": "It is a portfolio of my web site (this site). Not only the appearance and user experience but also the ease of operation has been considered. Sass and Pug were adopted in consideration of ease of operation and visibility. It also supports two languages, English and Japanese.",
 

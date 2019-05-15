@@ -7,8 +7,8 @@ html(lang=locale)
         include ../module/_header
         main.About
             .About__header
-                h1.About__headerTitle(data-aos='fade-up',data-aos-delay="500") #{about.name}
-                .Scroll(data-aos='zoom-in', data-aos-delay="1500",data-aos-anchor-placement="top-bottom")
+                h1.About__headerTitle(data-aos='fade-up',data-aos-delay="500") About
+                .Scroll(data-aos='zoom-in', data-aos-delay="1000",data-aos-anchor-placement="top-bottom")
             .About__main
                 section.Hi
                     .Hi__inner
@@ -17,7 +17,7 @@ html(lang=locale)
                             p.Hi__contentText(data-aos='fade-up') #{about.hiText}
                         .Hi__visual
                             p.Hi__visualImg(data-aos='zoom-in')
-                                img(src=`${meta.rootDir}asset/images/about_img_hi.png`)
+                                img(src=`${meta.rootDir}asset/images/about/about_img_hi.png`)
                 section.What
                     .What__inner
                         h2.What__title #{about.whatTitle}
@@ -27,21 +27,21 @@ html(lang=locale)
                                 p.What__designerContentText(data-aos='fade-up') #{about.whatDesignerText}
                             .What__designerVisual
                                 p.What__designerVisualImg(data-aos='zoom-in')
-                                    img(src=`${meta.rootDir}asset/images/about_icon_designer.png`)
+                                    img(src=`${meta.rootDir}asset/images/about/about_icon_designer.png`)
                         section.What__developer
                             .What__developerContent
                                 h3.What__developerContentTitle(data-aos='zoom-in') #{about.whatDeveloperTitle}
                                 p.What__developerContentText(data-aos='fade-up') #{about.whatDeveloperText}
                             .What__developerVisual
                                 p.What__developerVisualImg(data-aos='zoom-in')
-                                    img(src=`${meta.rootDir}asset/images/about_icon_developer.png`)
+                                    img(src=`${meta.rootDir}asset/images/about/about_icon_developer.png`)
                         section.What__gamer
                             .What__gamerContent
                                 h3.What__gamerContentTitle(data-aos='zoom-in') #{about.whatGamerTitle}
                                 p.What__gamerContentText(data-aos='fade-up') #{about.whatGamerText}
                             .What__gamerVisual
                                 p.What__gamerVisualImg(data-aos='zoom-in')
-                                    img(src=`${meta.rootDir}asset/images/about_icon_gamer.png`)
+                                    img(src=`${meta.rootDir}asset/images/about/about_icon_gamer.png`)
                 section.Skillset
                     .Skillset__inner
                         h2.Skillset__title(data-aos='zoom-in') #{about.skillsetTitle}

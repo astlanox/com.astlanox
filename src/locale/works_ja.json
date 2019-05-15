@@ -1,11 +1,11 @@
 {
     "locale": "ja",
     "title": "実績 - Astlanox",
-    "name": "Works",
+    "name": "実績",
     "description": "DescriptionHere",
     "enLink": "works/",
     "jaLink": "ja/works/",
-    "hrefLang": "en-US",
+    "hrefLang": "en",
     "hrefLangLink": "works/",
     "langLink": "ja/works/",
 

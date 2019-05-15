@@ -1,0 +1,22 @@
+{
+    "locale": "ja",
+    "title": "Infuse - Astlanox",
+    "name": "Infuse",
+    "description": "Insuseアプリの翻訳のポートフォリオです。",
+    "enLink": "works/other/infuse/",
+    "jaLink": "ja/works/other/infuse/",
+    "hrefLang": "en",
+    "hrefLangLink": "works/other/infuse/",
+    "langLink": "ja/works/other/infuse/",
+
+    "clientText": "Firecore, LLC",
+    "launchText": "2018/06/20",
+    "typeText": "翻訳",
+    "chargeText": "翻訳",
+
+    "aboutText": "Firecore社の動画ストリームアプリであるInfuseの英語から日本語への翻訳を行いました。言葉本来の意味だけでなく利用シーンや汎用的な表現に留意しながら、言語間での使用感に差異が出ないように翻訳を行いました。",
+
+    "screens": "画面",
+    "main": "メイン",
+    "introduction": "イントロダクション"
+}

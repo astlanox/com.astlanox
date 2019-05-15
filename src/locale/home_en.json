@@ -2,16 +2,16 @@
     "locale": "en",
     "title": "Astlanox",
     "name": "Home",
-    "description": "This is portfolio Website of Astlanox who is UI/UX designer and developer.",
+    "description": "This is portfolio website of Astlanox who is UI/UX designer and developer.",
     "enLink": "",
     "jaLink": "ja/",
-    "hrefLang": "ja-JA",
+    "hrefLang": "ja",
     "hrefLangLink": "ja/",
     "langLink": "",
 
     "home": "Home",
 
-    "mvTitle": "To be Simple is Difficult",
+    "mvTitle": "Be Simple is Difficult",
     "mvJob": "UI/UX Designer and Developer",
     "mvWorks": "Works",
     "mvWorksLink": "works/"

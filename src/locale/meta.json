@@ -1,4 +1,4 @@
 {
-    // "rootDir": "http://192.168.1.52:3000/"
+    // "rootDir": "http://localhost:3000/"
     "rootDir": "https://astlanox.com/"
 }

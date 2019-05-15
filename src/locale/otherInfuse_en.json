@@ -1,0 +1,22 @@
+{
+    "locale": "en",
+    "title": "Infuse - Astlanox",
+    "name": "Infuse",
+    "description": "This is portfolio of translation of the Infuse app.",
+    "enLink": "works/other/infuse/",
+    "jaLink": "ja/works/other/infuse/",
+    "hrefLang": "ja",
+    "hrefLangLink": "ja/works/other/infuse/",
+    "langLink": "works/other/infuse/",
+
+    "clientText": "Firecore, LLC",
+    "launchText": "2018/06/20",
+    "typeText": "Translate",
+    "chargeText": "Translate",
+
+    "aboutText": "I translated the Infuse that video stream app developed by Firecore, LLC. The translation was done so that there was no difference in usage between languages, keeping in mind not only the meaning of the words but also the usage scenes and general expressions.",
+
+    "screens": "Screen",
+    "main": "Main",
+    "introduction": "Introduction"
+}

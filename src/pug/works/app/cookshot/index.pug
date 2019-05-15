@@ -1,0 +1,134 @@
+-var page = appCookshot
+include ../../../module/_locale
+doctype html
+html(lang=locale)
+    include ../../../module/_head
+    body
+        main.WorksItem
+            .WorksItem__header
+                h1.WorksItem__headerTitle #{appCookshot.name}
+                img.WorksItem__headerVisual(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_mv.png`, data-aos="fade-up", data-aos-anchor-placement="top-bottom")
+            .WorksItem__main
+                section.AppCookshot__information
+                    h2.AppCookshot__informationTitle #{worksItem.information}
+                    section.AppCookshot__informationSkill
+                        h3.AppCookshot__informationSkillTitle #{worksItem.skill}
+                        ol.AppCookshot__informationSkillList
+                            li.AppCookshot__informationSkillListItem.AppCookshot__informationSkillListItem--ui UI Design
+                            li.AppCookshot__informationSkillListItem.AppCookshot__informationSkillListItem--ux UX Design
+                    section.AppCookshot__informationSoftware
+                        h3.AppCookshot__informationSoftwareTitle #{worksItem.software}
+                        ol.AppCookshot__informationSoftwareList
+                            li.AppCookshot__informationSoftwareListItem.AppCookshot__informationSoftwareListItem--illustrator Illustrator
+                            li.AppCookshot__informationSoftwareListItem.AppCookshot__informationSoftwareListItem--adobeXd Adobe XD
+                            li.AppCookshot__informationSoftwareListItem.AppCookshot__informationSoftwareListItem--sketch Sketch
+                    section.AppCookshot__informationDetail
+                        h3.AppCookshot__informationDetailTitle #{worksItem.detail}
+                        dl.AppCookshot__informationDetailList
+                            .AppCookshot__informationDetailListItem
+                                dt.AppCookshot__informationDetailListItemTitle #{worksItem.client}
+                                dd.AppCookshot__informationDetailListItemText #{appCookshot.clientText}
+                            .AppCookshot__informationDetailListItem
+                                dt.AppCookshot__informationDetailListItemTitle #{worksItem.launch}
+                                dd.AppCookshot__informationDetailListItemText #{appCookshot.launchText}
+                            .AppCookshot__informationDetailListItem
+                                dt.AppCookshot__informationDetailListItemTitle #{worksItem.type}
+                                dd.AppCookshot__informationDetailListItemText #{appCookshot.typeText}
+                            .AppCookshot__informationDetailListItem
+                                dt.AppCookshot__informationDetailListItemTitle #{worksItem.charge}
+                                dd.AppCookshot__informationDetailListItemText #{appCookshot.chargeText}
+                section.AppCookshot__about
+                    h2.AppCookshot__aboutTitle #{worksItem.about}
+                    p.AppCookshot__aboutText #{appCookshot.aboutText}
+                //- section.AppCookshot__identity
+                    h2.AppCookshot__identityTitle #{worksItem.identity}
+                    p.AppCookshot__identityText #{appCookshot.identityText}
+                    section.AppCookshot__logo
+                        h3.AppCookshot__logoTitle #{worksItem.logo}
+                        p.AppCookshot__logoVisual
+                            img(src=`${meta.rootDir}asset/images/app/cookshot/busica_img_logo.png`)
+                    section.AppCookshot__color
+                        h3.AppCookshot__colorTitle #{worksItem.color}
+                        p.AppCookshot__colorVisual
+                            img(src=`${meta.rootDir}asset/images/app/cookshot/Cookshot_img_color.png`)
+                    section.AppCookshot__typography
+                        h3.AppCookshot__typographyTitle #{worksItem.typography}
+                        p.AppCookshot__typographyVisual
+                            img(src=`${meta.rootDir}asset/images/app/cookshot/Cookshot_img_typography.png`)
+                section.AppCookshot__ux
+                    h2.AppCookshot__uxTitle #{worksItem.ux}
+                    p.AppCookshot__uxText #{appCookshot.uxText}
+                    p.AppCookshot__uxVisual
+                        img(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_img_ux.png`)
+                section.AppCookshot__ui
+                    h2.AppCookshot__uiTitle #{worksItem.ui}
+                    p.AppCookshot__uiText #{appCookshot.uiText}
+                    p.AppCookshot__uiVisual
+                        img(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_img_ui.png`)
+                    section.AppCookshot__screen
+                        h3.AppCookshot__screenTitle #{appCookshot.screen}
+                        section.AppCookshot__screenMain
+                            h4.AppCookshot__screenMainTitle #{appCookshot.main}
+                            p.AppCookshot__screenMainText #{appCookshot.mainText}
+                            p.AppCookshot__screenMainVisual
+                                img(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_img_screen_01.png`)
+                        section.AppCookshot__screenContact
+                            h4.AppCookshot__screenContactTitle #{appCookshot.feed}
+                            p.AppCookshot__screenContactText #{appCookshot.feedText}
+                            p.AppCookshot__screenContactVisual
+                                img(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_img_screen_02.png`)
+                        section.AppCookshot__screenMessage
+                            h4.AppCookshot__screenMessageTitle #{appCookshot.search}
+                            p.AppCookshot__screenMessageText #{appCookshot.searchText}
+                            p.AppCookshot__screenMessageVisual
+                                img(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_img_screen_03.png`)
+                        section.AppCookshot__screenMessage
+                            h4.AppCookshot__screenMessageTitle #{appCookshot.account}
+                            p.AppCookshot__screenMessageText #{appCookshot.accountText}
+                            p.AppCookshot__screenMessageVisual
+                                img(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_img_screen_04.png`)
+                        section.AppCookshot__screenMessage
+                            h4.AppCookshot__screenMessageTitle #{appCookshot.recipe}
+                            p.AppCookshot__screenMessageText #{appCookshot.recipeText}
+                            p.AppCookshot__screenMessageVisual
+                                img(src=`${meta.rootDir}asset/images/works/app/cookshot/cookshot_img_screen_05.png`)
+                    //- section.AppCookshot__dark
+                        h3.AppCookshot__darkTitle #{worksItem.dark}
+                        p.AppCookshot__darkText #{appCookshot.darkText}
+                        p.AppCookshot__darkVisual
+                            img(src=`${meta.rootDir}asset/images/app/cookshot/Cookshot_img_dark.png`)
+                    //- section.AppCookshot__icon
+                        h3.AppCookshot__iconTitle #{worksItem.icon}
+                        p.AppCookshot__iconText #{appCookshot.iconText}
+                        p.AppCookshot__iconVisual
+                            img(src=`${meta.rootDir}asset/images/app/cookshot/Cookshot_img_icon.png`)
+            .WorksItem__footer
+                ol.WorksItem__footerBreadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.WorksItem__footerBreadcrumbItem
+                        a.WorksItem__footerBreadcrumbItemLink.WorksItem__footerBreadcrumbItemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText.WorksItem__footerBreadcrumbItemLinkText--home Home
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + works.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{works.name}
+                        meta(itemprop='position', content='1')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + app.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{app.name}
+                        meta(itemprop='position', content='2')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + appCookshot.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{appCookshot.name}
+                        meta(itemprop='position', content='3')
+                p.WorksItem__footerMessage
+                    |Made with 
+                    span.WorksItem__footerMessageLove love
+                    |  and 
+                    span.WorksItem__footerMessageCoffee coffee
+                    |  by Astlanox.
+            .WorksItem__close
+                a(href=`${meta.rootDir + works.langLink}`)
+                    span.WorksItem__closeButton
+        include ../../../module/_script

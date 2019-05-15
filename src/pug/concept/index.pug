@@ -7,8 +7,8 @@ html(lang=locale)
         include ../module/_header
         main.Concept
             .Concept__header
-                h1.Concept__headerTitle(data-aos='fade-up',data-aos-delay="500") #{concept.name}
-                .Scroll(data-aos='zoom-in', data-aos-delay="1500",data-aos-anchor-placement="top-bottom")
+                h1.Concept__headerTitle(data-aos='fade-up',data-aos-delay="500") Concept
+                .Scroll(data-aos='zoom-in', data-aos-delay="1000",data-aos-anchor-placement="top-bottom")
             .Concept__main
                 section.ConceptOne
                     .ConceptOne__inner
@@ -17,7 +17,7 @@ html(lang=locale)
                             p.ConceptOne__contentText(data-aos='fade-up') #{concept.oneText}
                         .ConceptOne__visual
                             .ConceptOne__visualImg(data-aos='zoom-in')
-                                img(src=`${meta.rootDir}asset/images/concept_img_01.png`)
+                                img(src=`${meta.rootDir}asset/images/concept/concept_img_01.png`)
                 section.ConceptSecond
                     .ConceptSecond__inner
                         .ConceptSecond__content
@@ -25,7 +25,7 @@ html(lang=locale)
                             p.ConceptSecond__contentText(data-aos='fade-up') #{concept.twoText}
                         .ConceptSecond__visual
                             .ConceptSecond__visualImg(data-aos='zoom-in')
-                                img(src=`${meta.rootDir}asset/images/concept_img_02.png`)
+                                img(src=`${meta.rootDir}asset/images/concept/concept_img_02.png`)
                 section.ConceptThird
                     .ConceptThird__inner
                         .ConceptThird__content
@@ -33,7 +33,7 @@ html(lang=locale)
                             p.ConceptThird__contentText(data-aos='fade-up') #{concept.thirdText}
                         .ConceptThird__visual
                             .ConceptThird__visualImg(data-aos='zoom-in')
-                                img(src=`${meta.rootDir}asset/images/concept_img_03.png`)
+                                img(src=`${meta.rootDir}asset/images/concept/concept_img_03.png`)
             .Concept__footer
                 ol.Breadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
                     li.Breadcrumb__item

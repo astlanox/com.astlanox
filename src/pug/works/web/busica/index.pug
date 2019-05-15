@@ -1,0 +1,127 @@
+-var page = webBusica
+include ../../../module/_locale
+doctype html
+html(lang=locale)
+    include ../../../module/_head
+    body
+        main.WorksItem
+            .WorksItem__header
+                h1.WorksItem__headerTitle #{webBusica.name}
+                img.WorksItem__headerVisual(src=`${meta.rootDir}asset/images/works/web/busica/busica_mv.png`, data-aos="fade-up", data-aos-anchor-placement="top-bottom")
+            .WorksItem__main
+                //- section.WorksItemWeb__link
+                    h2.WorksItemWeb__linkTitle #{worksItem.link}
+                    ul.WorksItemWeb__linkList
+                        li.WorksItemWeb__linkListItem.WorksItemWeb__linkListItem--visit
+                            a.WorksItemWeb__linkListItemHref.WorksItemWeb__linkListItemHref--visit(href="https://busica.com" target="_blank") #{worksItem.visit}
+                        li.WorksItemWeb__linkListItem.WorksItemWeb__linkListItem--github
+                            a.WorksItemWeb__linkListItemHref.WorksItemWeb__linkListItemHref--github(href="https://github.com/busica/com.busica"  target="_blank") #{worksItem.github}
+                section.WorksItemWeb__information
+                    h2.WorksItemWeb__informationTitle #{worksItem.information}
+                    section.WorksItemWeb__informationSkill
+                        h3.WorksItemWeb__informationSkillTitle #{worksItem.skill}
+                        ol.WorksItemWeb__informationSkillList
+                            li.WorksItemWeb__informationSkillListItem.WorksItemWeb__informationSkillListItem--html HTML
+                            li.WorksItemWeb__informationSkillListItem.WorksItemWeb__informationSkillListItem--css CSS
+                            li.WorksItemWeb__informationSkillListItem.WorksItemWeb__informationSkillListItem--pug Pug
+                            li.WorksItemWeb__informationSkillListItem.WorksItemWeb__informationSkillListItem--sass Sass
+                    section.WorksItemWeb__informationSoftware
+                        h3.WorksItemWeb__informationSoftwareTitle #{worksItem.software}
+                        ol.WorksItemWeb__informationSoftwareList
+                            li.WorksItemWeb__informationSoftwareListItem.WorksItemWeb__informationSoftwareListItem--illustrator Illustrator
+                            li.WorksItemWeb__informationSoftwareListItem.WorksItemWeb__informationSoftwareListItem--vsCode VS Code
+                    section.WorksItemWeb__informationDetail
+                        h3.WorksItemWeb__informationDetailTitle #{worksItem.detail}
+                        dl.WorksItemWeb__informationDetailList
+                            .WorksItemWeb__informationDetailListItem
+                                dt.WorksItemWeb__informationDetailListItemTitle #{worksItem.client}
+                                dd.WorksItemWeb__informationDetailListItemText #{webBusica.clientText}
+                            .WorksItemWeb__informationDetailListItem
+                                dt.WorksItemWeb__informationDetailListItemTitle #{worksItem.launch}
+                                dd.WorksItemWeb__informationDetailListItemText #{webBusica.launchText}
+                            .WorksItemWeb__informationDetailListItem
+                                dt.WorksItemWeb__informationDetailListItemTitle #{worksItem.type}
+                                dd.WorksItemWeb__informationDetailListItemText #{webBusica.typeText}
+                            .WorksItemWeb__informationDetailListItem
+                                dt.WorksItemWeb__informationDetailListItemTitle #{worksItem.charge}
+                                dd.WorksItemWeb__informationDetailListItemText #{webBusica.chargeText}
+                section.WorksItemWeb__about
+                    h2.WorksItemWeb__aboutTitle #{worksItem.about}
+                    p.WorksItemWeb__aboutText #{webBusica.aboutText}
+                section.WorksItemWeb__concept
+                    h2.WorksItemWeb__conceptTitle #{worksItem.concept}
+                    p.WorksItemWeb__conceptText #{webBusica.conceptText}
+                section.WorksItemWeb__responsible
+                    h2.WorksItemWeb__responsibleTitle #{worksItem.responsible}
+                    p.WorksItemWeb__responsibleText #{webBusica.responsibleText}
+                    p.WorksItemWeb__responsibleVisual
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_responsible.png`)
+                section.WorksItemWeb__visual
+                    h2.WorksItemWeb__visualTitle #{worksItem.visual}
+                    p.WorksItemWeb__visualImg
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_screen_01.png`)
+                    p.WorksItemWeb__visualImg
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_screen_02.png`)
+                    p.WorksItemWeb__visualImg
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_screen_03.png`)
+                    p.WorksItemWeb__visualImg
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_screen_04.png`)
+                    p.WorksItemWeb__visualImg
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_screen_05.png`)
+                    p.WorksItemWeb__visualImg
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_screen_06.png`)
+                    section.WorksItemWeb__illustration
+                        h3.WorksItemWeb__illustrationTitle #{worksItem.illustration}
+                        p.WorksItemWeb__illustrationVisual
+                            img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_illustration.png`)
+                    //- section.WorksItemWeb__autoReply
+                        h3.WorksItemWeb__autoReplyTitle #{worksItem.autoReply}
+                //- section.WorksItemWeb__animation
+                    h2.WorksItemWeb__animationTitle #{worksItem.animation}
+                section.WorksItemWeb__multiple
+                    h2.WorksItemWeb__multipleTitle #{worksItem.multiple}
+                    p.WorksItemWeb__multipleText #{webBusica.multipleText}
+                    p.WorksItemWeb__multipleVisual
+                        img(src=`${meta.rootDir}asset/images/works/web/busica/busica_img_multiple.png`)
+                //- section.WorksItemWeb__technology
+                    h2.WorksItemWeb__technologyTitle #{worksItem.technology}
+                    section.WorksItemWeb__sass
+                        h3.WorksItemWeb__sassTitle #{worksItem.sass}
+                        p.WorksItemWeb__sassText #{webBusica.sassText}
+                        p.WorksItemWeb__sassVisual
+                            img(src=`${meta.rootDir}asset/images/web/busica/busica_img_sass.png`)
+                    section.WorksItemWeb__bem
+                        h3.WorksItemWeb__bemTitle #{worksItem.bem}
+                        p.WorksItemWeb__bemText #{webBusica.bemText}
+                        p.WorksItemWeb__bemVisual
+                            img(src=`${meta.rootDir}asset/images/web/busica/busica_img_bem.png`)
+            .WorksItem__footer
+                ol.WorksItem__footerBreadcrumb(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                    li.WorksItem__footerBreadcrumbItem
+                        a.WorksItem__footerBreadcrumbItemLink.WorksItem__footerBreadcrumbItemLink--home(href=`${meta.rootDir + home.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText.WorksItem__footerBreadcrumbItemLinkText--home Home
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + works.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{works.name}
+                        meta(itemprop='position', content='2')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + web.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{web.name}
+                        meta(itemprop='position', content='3')
+                    span.WorksItem__footerBreadcrumbItem.WorksItem__footerBreadcrumbItem--right ›
+                    li.WorksItem__footerBreadcrumbItem(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a.WorksItem__footerBreadcrumbItemLink(itemtype='https://schema.org/Thing', itemprop='item', href=`${meta.rootDir + webBusica.langLink}`)
+                            span.WorksItem__footerBreadcrumbItemLinkText(itemprop='name') #{webBusica.name}
+                        meta(itemprop='position', content='4')
+                p.WorksItem__footerMessage
+                    |Made with 
+                    span.WorksItem__footerMessageLove love
+                    |  and 
+                    span.WorksItem__footerMessageCoffee coffee
+                    |  by Astlanox.
+            .WorksItem__close
+                a(href=`${meta.rootDir + works.langLink}`)
+                    span.WorksItem__closeButton
+        include ../../../module/_script

@@ -1,0 +1,27 @@
+{
+    "locale": "en",
+    "title": "Busica (Concept) - Astlanox",
+    "name": "Busica (Concept)",
+    "description": "This is portfolio of Astlanox's website.",
+    "enLink": "works/web/busica/",
+    "jaLink": "ja/works/web/busica/",
+    "hrefLang": "ja",
+    "hrefLangLink": "ja/works/web/busica/",
+    "langLink": "works/web/busica/",
+
+    "clientText": "-",
+    "launchText": "-",
+    "typeText": "Web Design",
+    "chargeText": "Plannign, Web Design, Graphic Design, Cording, Writing",
+
+    "aboutText": "A portfolio of Busica's website. Not only the appearance and user experience but also the ease of operation has been considered. Sass and Pug were adopted in consideration of ease of operation and visibility. It also supports two languages, English and Japanese.",
+
+    "conceptText": "I designed with an awareness of simple, flat and soft, which is the concept of the Busica app.",
+
+    "responsibleText": "It is created with Responsible Design so that there is no difference in information and impressions by devices between PCs, tablets and smartphones.",
+
+    "multipleText": "It supports both English and Japanese languages.",
+
+    "sassText": "It is written in Sass, which is easier to manage and operate than regular CSS.",
+    "bemText": "We adopted Bem notation in consideration of post-publication operation and readability."
+}

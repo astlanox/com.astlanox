@@ -1,11 +1,11 @@
 {
     "locale": "ja",
     "title": "自己紹介 - Astlanox",
-    "name": "About",
+    "name": "自己紹介",
     "description": "自己紹介のページです。",
     "enLink": "about/",
     "jaLink": "ja/about/",
-    "hrefLang": "en-US",
+    "hrefLang": "en",
     "hrefLangLink": "about/",
     "langLink": "ja/about/",
 

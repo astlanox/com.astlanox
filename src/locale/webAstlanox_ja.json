@@ -5,14 +5,14 @@
     "description": "AstlanoxのWebサイトのポートフォリオです。",
     "enLink": "works/web/astlanox/",
     "jaLink": "ja/works/web/astlanox/",
-    "hrefLang": "en-US",
+    "hrefLang": "en",
     "hrefLangLink": "works/web/astlanox/",
     "langLink": "ja/works/web/astlanox/",
 
     "clientText": "-",
     "launchText": "2019/03/18",
     "typeText": "Webデザイン",
-    "chargeText": "企画、Webデザイン、グラフィックデザイン、ライティング",
+    "chargeText": "企画、Webデザイン、グラフィックデザイン、コーディング、ライティング",
 
     "aboutText": "私のWebサイト（当サイト）のポートフォリオです。見た目やユーザー体験だけでなく、運用のしやすさまで考えてこだわって作り上げました。運用のしやすさや視認性を考慮してSassとPugを採用しました。また、英語と日本語の２つの言語に対応しています。",
 
